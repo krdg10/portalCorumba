@@ -3,7 +3,8 @@ const mongoose = restful.mongoose
 
 const postSchema = new mongoose.Schema({
     description: {type: String, required: true},
-    done: {type: Boolean, required: true, default: false},
+    tipo: {type: String, required: true},
+    done: {type: Boolean, default: false},
     createdAt: { type: Date, default: Date.now }
 })
 

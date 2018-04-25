@@ -7,7 +7,7 @@ module.exports = function(server){
     server.use('/api', router)
 
 
-    const todoService = require('../api/post/postService')
-    todoService.register(router, '/posts')
+    const postService = require('../api/post/postService')
+    postService.register(router, '/posts')
 
 }
