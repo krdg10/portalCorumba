@@ -7,9 +7,9 @@ import React from 'react'
 
 
 import Routes from './routes'
-
+//nao colocar conteiner na div
 export default props => (
-    <div className='container'>
+    <div >
         
         <Menu />
         <Header />
