@@ -18,14 +18,14 @@ export default props => (
       <div className="row no-gutters popup-gallery">
         <div className="col-lg-4 col-sm-6">
           <a className="portfolio-box" href={ImagemUmF}>
-            <img className="img-fluid" src={ImagemUm} alt="" />
+            <img className="img-fluid img-size" src={ImagemUm} alt="" />
             <div className="portfolio-box-caption">
               <div className="portfolio-box-caption-content">
                 <div className="project-category text-faded">
-                  Category
+               
                 </div>
                 <div className="project-name">
-                  Project Name
+                  
                 </div>
               </div>
             </div>
@@ -33,14 +33,14 @@ export default props => (
         </div>
         <div className="col-lg-4 col-sm-6">
           <a className="portfolio-box" href={ImagemDoisF}>
-            <img className="img-fluid" src={ImagemDois} alt="" />
+            <img className="img-fluid img-size" src={ImagemDois} alt="" />
             <div className="portfolio-box-caption">
               <div className="portfolio-box-caption-content">
                 <div className="project-category text-faded">
-                  Category
+               
                 </div>
                 <div className="project-name">
-                  Project Name
+                
                 </div>
               </div>
             </div>
@@ -48,14 +48,14 @@ export default props => (
         </div>
         <div className="col-lg-4 col-sm-6">
           <a className="portfolio-box" href={ImagemTresF}>
-            <img className="img-fluid" src={ImagemTres} alt="" />
+            <img className="img-fluid img-size" src={ImagemTres} alt="" />
             <div className="portfolio-box-caption">
               <div className="portfolio-box-caption-content">
                 <div className="project-category text-faded">
-                  Category
+              
                 </div>
                 <div className="project-name">
-                  Project Name
+                 
                 </div>
               </div>
             </div>
@@ -63,14 +63,14 @@ export default props => (
         </div>
         <div className="col-lg-4 col-sm-6">
           <a className="portfolio-box" href={ImagemQuatroF}>
-            <img className="img-fluid" src={ImagemQuatro} alt="" />
+            <img className="img-fluid img-size" src={ImagemQuatro} alt="" />
             <div className="portfolio-box-caption">
               <div className="portfolio-box-caption-content">
                 <div className="project-category text-faded">
-                  Category
+                 
                 </div>
                 <div className="project-name">
-                  Project Name
+                
                 </div>
               </div>
             </div>
@@ -78,14 +78,14 @@ export default props => (
         </div>
         <div className="col-lg-4 col-sm-6">
           <a className="portfolio-box" href={ImagemCincoF}>
-            <img className="img-fluid" src={ImagemCinco} alt="" />
+            <img className="img-fluid img-size" src={ImagemCinco} alt="" />
             <div className="portfolio-box-caption">
               <div className="portfolio-box-caption-content">
                 <div className="project-category text-faded">
-                  Category
+                 
                 </div>
                 <div className="project-name">
-                  Project Name
+                 
                 </div>
               </div>
             </div>
@@ -93,14 +93,14 @@ export default props => (
         </div>
         <div className="col-lg-4 col-sm-6">
           <a className="portfolio-box" href={ImagemSeisF}>
-            <img className="img-fluid" src={ImagemSeis} alt="" />
+            <img className="img-fluid img-size" src={ImagemSeis} alt="" />
             <div className="portfolio-box-caption">
               <div className="portfolio-box-caption-content">
                 <div className="project-category text-faded">
-                  Category
+             
                 </div>
                 <div className="project-name">
-                  Project Name
+                 
                 </div>
               </div>
             </div>

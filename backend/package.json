@@ -2,7 +2,6 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "main": "src/loader.js",
   "scripts": {
     "dev": "nodemon",
@@ -19,7 +18,5 @@
     "nodemon": "^1.11.0",
     "pm2": "^2.1.5"
   },
-  "dependencies": {
-    "nodemon": "^1.17.3"
-  }
+  "dependencies": {}
 }
