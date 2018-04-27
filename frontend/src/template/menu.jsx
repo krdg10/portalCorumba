@@ -11,16 +11,16 @@ export default props => (
       <div className="collapse navbar-collapse" id="navbarResponsive">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#about">Informações</a>
+            <a className="nav-link js-scroll-trigger" href="#/informacoes">Informações</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#services">Hospedagem</a>
+            <a className="nav-link js-scroll-trigger" href="#/hospedagem">Hospedagem</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#portfolio">Alimentação</a>
+            <a className="nav-link js-scroll-trigger" href="#/alimentacao">Alimentação</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#contact">Onde ir</a>
+            <a className="nav-link js-scroll-trigger" href="#/onde_ir">Onde ir</a>
           </li>
           <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="#/historia">Historia</a>
