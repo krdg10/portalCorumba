@@ -14,13 +14,18 @@ export default class Historia extends Component {
         this.refresh()
     }
 
+  /*  refresh(){
+        const search = tipo?`&tipo__regex=historia` : '' //isso aqui ta errado pq tipo recebe ou aquilo ali ou vazio. Ai como nao tem uma tag/variavel num possivel form definindo tipo dá bo e pq nesse caso nunca vai ser vazio tbm
+        axios.get(`${URL}?sort=-createdAt${search}`)
+            .then(resp => this.setState({...this.state, description, tipo, list: resp.data})) //description e tipo tem que ter valor atribuido
+    }*/
+   
     refresh(){
-      //const search = tipo ? `&tipo=/${tipo}/` : ''
-        axios.get(`${URL}?sort=-createdAt`)
+        const search = `&tipo__regex=historia` 
+        axios.get(`${URL}?sort=-createdAt${search}`)
             .then(resp => this.setState({...this.state, description: '', tipo: '', list: resp.data}))
-            //.then(resp => this.setState({...this.state, description, list: resp.data}))
     }
-  
+
     render() {
         return (
             <div className='publicacoes'> 

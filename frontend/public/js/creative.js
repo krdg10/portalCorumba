@@ -28,14 +28,19 @@
 
   // Collapse Navbar
   var navbarCollapse = function() {
+
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
     } else {
       $("#mainNav").removeClass("navbar-shrink");
     }
   };
-  // Collapse now if page is not at top
-  navbarCollapse();
+
+  $(document).ready(function(){//dá BO sem isso aqui porque o js inicia função sem a existẽncia do elemento no browser. Se tirar dá ruim
+    // Collapse now if page is not at top
+    navbarCollapse(); 
+  });
+
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 

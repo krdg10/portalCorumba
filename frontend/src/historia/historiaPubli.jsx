@@ -3,13 +3,6 @@ import React from 'react'
 
 export default props => {
     const renderRows = () =>{
-      //  const list = props.list || []
-
-      //  return list.map(posta => (
-        //    <tr key={posta._id}> 
-          //      <td>{todo.description}</td>
-           // </tr>
-        //))
         const list = props.list || []
         return list.map(post => (
             <tr key={post._id}>
@@ -28,7 +21,6 @@ export default props => {
                 {renderRows()}
             </tbody>
         </table>
-
     )
 }
 
