@@ -324,3 +324,7 @@ header.masthead p {
     height: 359px;
 
 }
+
+#imagem_comentario{
+  width:60px !important;
+}

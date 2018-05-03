@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 
 import Publicacao from './historiaPubli'
+import Comentario from './comentarios'
 const URL = 'http://localhost:3003/api/posts'
 
 
@@ -11,7 +12,8 @@ export default class Historia extends Component {
         super(props)
         this.state = {description: '', tipo: '', list: [] }
 
-        this.refresh()
+        this.refresh_publi()
+       
     }
 
   /*  refresh(){
@@ -20,16 +22,19 @@ export default class Historia extends Component {
             .then(resp => this.setState({...this.state, description, tipo, list: resp.data})) //description e tipo tem que ter valor atribuido
     }*/
    
-    refresh(){
+    refresh_publi(){
         const search = `&tipo__regex=historia` 
         axios.get(`${URL}?sort=-createdAt${search}`)
             .then(resp => this.setState({...this.state, description: '', tipo: '', list: resp.data}))
     }
 
+   
+
     render() {
         return (
             <div className='publicacoes'> 
              <Publicacao list={this.state.list} />
+             <Comentario />
             </div>
         )
     }
