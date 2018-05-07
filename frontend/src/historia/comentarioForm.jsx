@@ -6,11 +6,15 @@ export default props => {
     return (
         <div role='form' className='comentarioForm'>
             <Grid cols = '12 9 10'>
-            
-                <input id='description' className='form-control'
+               <input id='name' className='form-control'
+                    placeholder='Nome'
+                    value={props.name} 
+                    onChange={props.handleChange2}></input>
+                <textarea id='description' className='form-control'
                     placeholder='Adicione um comentário'
                     value={props.description} 
-                    onChange={props.handleChange}></input>
+                    onChange={props.handleChange}></textarea>
+
             </Grid>
     
             <Grid cols ='12 3 2'>

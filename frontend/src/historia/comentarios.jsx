@@ -16,6 +16,7 @@ export default class Historia extends Component {
 
 
         this.handleChange = this.handleChange.bind(this)
+        this.handleChange2 = this.handleChange2.bind(this)
         this.handleAdd = this.handleAdd.bind(this)
         this.refresh()
        
@@ -26,9 +27,14 @@ export default class Historia extends Component {
     handleChange(e){
         this.setState({...this.state, description: e.target.value })
     }
+    handleChange2(e){
+        this.setState({...this.state, name: e.target.value })
+    }
     handleAdd(){
         const description = this.state.description//arrumar forma de passar mais parametros, no caso nome e tipo. Tipo é fixo entao é mais de boa. Quando deixei default na collection deu
-        axios.post(URL, {description})
+        const name = this.state.name
+        const tipo = 'histoComentario'
+        axios.post(URL, {description, name, tipo})
             .then(resp => this.refresh())
     }
     refresh(){
@@ -43,8 +49,10 @@ export default class Historia extends Component {
         return (
             <div className='comentarios'> 
              <ComentarioForm description={this.state.description} 
+                    name={this.state.name}
                     handleAdd={this.handleAdd}
-                    handleChange={this.handleChange} />
+                    handleChange={this.handleChange}
+                    handleChange2={this.handleChange2} />
              <Comentario list={this.state.list} />
            
             </div>

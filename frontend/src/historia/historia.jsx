@@ -33,7 +33,7 @@ export default class Historia extends Component {
     render() {
         return (
             <div className='publicacoes'> 
-             <Publicacao list={this.state.list} />
+            <left> <Publicacao list={this.state.list} /></left>
              <Comentario />
             </div>
         )

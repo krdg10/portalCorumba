@@ -328,3 +328,7 @@ header.masthead p {
 #imagem_comentario{
   width:60px !important;
 }
+
+#botoes_hospedagem {
+  text-align:center;
+}

@@ -11,7 +11,7 @@ export default props => {
         ))
     }
     return (
-        <table className='table'>
+        <table className='table' id="historia">
             <thead>
                 <tr>
                     <th>Publicações</th>
