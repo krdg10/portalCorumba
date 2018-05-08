@@ -4,7 +4,7 @@ import axios from 'axios'
 
 
 import Botoes from '../hospedagem/botoes_hospedagem'
-import Card from './card'
+import Card from '../hotel/card'
 const URL = 'http://localhost:3003/api/posts'
 
 export default class Pousada extends Component {

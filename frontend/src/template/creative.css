@@ -336,3 +336,7 @@ header.masthead p {
 .card {
   width:400px !important;
 }
+
+.display {
+  display: inline-block !important;
+}

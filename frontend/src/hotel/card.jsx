@@ -6,7 +6,7 @@ export default props => {
         const list = props.list || []
         return list.map(post => (
            
-                <td key={post._id}>
+                <span key={post._id} className="display">
                 <div className="card" >
                     <img className="card-img-top" src={Imagem} alt="Card image" />
                     <div className="card-body">
@@ -15,22 +15,16 @@ export default props => {
                         <a href="#" className="btn btn-primary">See Profile</a>
                     </div>
                 </div>
-                </td>
+                </span>
            
         ))
     }
 
     return (
        
-        <table className='table'>
-            <thead>
-              
-            </thead>
-            <tbody>
-            <tr>
-                {renderRows()}
-            </tr>
-            </tbody>
-        </table>
+        <div>
+           {renderRows()}
+          
+        </div>
     )
 }
