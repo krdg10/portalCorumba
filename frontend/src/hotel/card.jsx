@@ -28,3 +28,26 @@ export default props => {
         </div>
     )
 }
+
+/*const renderRows = () =>{
+        const list = props.list || []
+        return list.map(post => (
+           
+                <span key={post._id} className="display">
+                <div className="card" >
+                    <img className="card-img-top" src={Imagem} alt="Card image" />
+                    <div className="card-body">
+                        <h4 className="card-title">{post.name}</h4>
+                        <p className="card-text">{post.description}</p>
+                        <Link to={`/hotel/${post._id}`}>
+                            {post.name} - {post.description}
+                        </Link>
+                    </div>
+                </div>
+                </span>
+           
+        ))
+    }
+
+chamando router no import
+pagina detail ta a mas inutilizada, routes tem que mudar e colocar a rota nova    */
