@@ -9,7 +9,7 @@ export default props => {
         return list.map(post => (
            
                <div key={post._id}>
-                            {post.name} - {post.description} </div>
+                          {post._id} -  {post.name} - {post.description} </div>
                       
            
         ))

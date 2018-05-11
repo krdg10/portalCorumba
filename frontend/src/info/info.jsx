@@ -11,13 +11,13 @@ export default class Detail extends Component {
     
     super(props)
     this.state = {description: '', tipo: '', name: '', list: [] }
-    console.log(this.props.params.id)
+    
     this.refresh()
    
   } 
   refresh(){
-   
-    const search = `&id__regex=${this.props.params.id}` //pesquisa zoada. Só arrumar isso
+    
+    const search = `&_id=${this.props.params.id}` //pesquisa zoada. Só arrumar isso
     axios.get(`${URL}?sort=-createdAt${search}`)
         .then(resp => this.setState({...this.state, description: '', tipo: '', name: '', list: resp.data}))
 
