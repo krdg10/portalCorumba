@@ -10,7 +10,8 @@ import Onde_Ir from '../onde_ir/onde_ir'
 import Hotel from '../hotel/hotel'
 import Pousada from '../pousada/pousada'
 import Hostel from '../hostel/hostel'
-
+import Teste from '../teste/hotel'
+import Detail from '../info/info'
 export default props =>(
     <Router history={hashHistory}>
         <Route path='/home' component={Home}/>
@@ -22,6 +23,10 @@ export default props =>(
         <Route path='/hotel' component={Hotel} />
         <Route path='/pousada' component={Pousada} />
         <Route path='/hostel' component={Hostel} />
+        <Route path='/teste' component={Teste} />
+        <Route path='/hotel/:id' component={Detail} />
+        <Route path='/teste/:id' component={Detail} />
+
         <Redirect from='*' to='/home'/>
     </Router>
 )
