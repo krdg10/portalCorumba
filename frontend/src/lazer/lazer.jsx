@@ -3,11 +3,11 @@ import axios from 'axios'
 
 
 
-import Botoes from '../hospedagem/botoes_hospedagem'
+import Botoes from '../onde_ir/botoes_onde_ir'
 import Card from '../template/card'
 const URL = 'http://localhost:3003/api/posts'
 
-export default class Hotel extends Component {
+export default class Lazer extends Component {
     constructor(props){
         super(props)
         this.state = {description: '', tipo: '', name: '', list: [] }
@@ -20,18 +20,18 @@ export default class Hotel extends Component {
   
    
     refresh(){
-        const search = `&tipo=hotel` 
+        const search = `&tipo=lazer` 
         axios.get(`${URL}?sort=-createdAt${search}`)
             .then(resp => this.setState({...this.state, description: '', tipo: '', name: '', list: resp.data}))
     }
 
     render() {
         return (
-            <div className='hospedagem'>
+            <div className='lazer'>
                 <br/> 
                 <Botoes /> 
                 <br/>
-                <Card tipo="hotel" list={this.state.list} />
+                <Card tipo="lazer" list={this.state.list} />
                
 
               

@@ -12,6 +12,8 @@ import Pousada from '../pousada/pousada'
 import Hostel from '../hostel/hostel'
 import Teste from '../teste/hotel'
 import Detail from '../info/info'
+import Lazer from '../lazer/lazer'
+import Noite from '../noite/noite'
 export default props =>(
     <Router history={hashHistory}>
         <Route path='/home' component={Home}/>
@@ -26,6 +28,14 @@ export default props =>(
         <Route path='/teste' component={Teste} />
         <Route path='/hotel/:id' component={Detail} />
         <Route path='/teste/:id' component={Detail} />
+        <Route path='/lazer' component={Lazer} />
+        <Route path='/lazer/:id' component={Detail} />
+        <Route path='/hostel/:id' component={Detail} />
+        <Route path='/pousada/:id' component={Detail} />
+        <Route path='/noite' component={Noite} />
+        <Route path='/noite/:id' component={Detail} />
+        <Route path='/alimentacao/:id' component={Detail} />
+
 
         <Redirect from='*' to='/home'/>
     </Router>

@@ -4,7 +4,7 @@ import axios from 'axios'
 
 
 import Botoes from '../hospedagem/botoes_hospedagem'
-import Card from '../hotel/card'
+import Card from '../template/card'
 const URL = 'http://localhost:3003/api/posts'
 
 export default class Hostel extends Component {
@@ -31,7 +31,7 @@ export default class Hostel extends Component {
                 <br/> 
                 <Botoes /> 
                 <br/>
-                <Card list={this.state.list} />
+                <Card tipo="hostel" list={this.state.list} />
                
 
               
