@@ -20,7 +20,7 @@ export default class Hotel extends Component {
   
    
     refresh(){
-        const search = `&tipo__regex=hotel` 
+        const search = `&tipo=hotel` 
         axios.get(`${URL}?sort=-createdAt${search}`)
             .then(resp => this.setState({...this.state, description: '', tipo: '', name: '', list: resp.data}))
     }
