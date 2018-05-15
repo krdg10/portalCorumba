@@ -13,7 +13,7 @@ export default class Historia extends Component {
     constructor(props){
         super(props)
         this.state = {description: '', tipo: '', name: '', list: [] }
-
+        this.tipocomentario = props.tipocomentario
 
         this.handleChange = this.handleChange.bind(this)
         this.handleChange2 = this.handleChange2.bind(this)
@@ -33,12 +33,13 @@ export default class Historia extends Component {
     handleAdd(){
         const description = this.state.description//arrumar forma de passar mais parametros, no caso nome e tipo. Tipo é fixo entao é mais de boa. Quando deixei default na collection deu
         const name = this.state.name
-        const tipo = 'histoComentario'
+        const tipo = this.tipocomentario
         axios.post(URL, {description, name, tipo})
             .then(resp => this.refresh())
     }
     refresh(){
-        const search = `&tipo__regex=histoComentario` 
+        const tipo = this.tipocomentario
+        const search = `&tipo=${tipo}` 
         axios.get(`${URL}?sort=-createdAt${search}`)
             .then(resp => this.setState({...this.state, description: '', tipo: '', name: '', list: resp.data}))
     }

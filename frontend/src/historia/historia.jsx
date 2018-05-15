@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 
 import Publicacao from './historiaPubli'
-import Comentario from './comentarios'
+import Comentario from '../comentarios/comentarios'
 const URL = 'http://localhost:3003/api/posts'
 
 
@@ -30,7 +30,7 @@ export default class Historia extends Component {
         return (
             <div className='publicacoes'> 
             <left> <Publicacao list={this.state.list} /></left>
-             <Comentario />
+             <Comentario tipocomentario="histoComentario" />
             </div>
         )
     }

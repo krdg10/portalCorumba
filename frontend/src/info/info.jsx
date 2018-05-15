@@ -3,7 +3,7 @@ import { Router, Route, Link, browserHistory } from 'react-router'
 import axios from 'axios'
 
 import Tratar from './tratar'
-
+import Comentario from '../comentarios/comentarios'
 const URL = 'http://localhost:3003/api/posts'
 
 export default class Detail extends Component {
@@ -36,6 +36,7 @@ export default class Detail extends Component {
         <Tratar list={this.state.list} />
 
         <Link to='/hospedagem'>Voltar para Hospedagem</Link>
+        <Comentario tipocomentario={this.props.params.id} />
       </div>
     );
   }
