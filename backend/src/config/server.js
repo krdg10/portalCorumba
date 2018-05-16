@@ -13,4 +13,12 @@ server.listen(port, function() {
 
 })
 
+server.get('/', function (req, res) {
+    res.send('GET request to the homepage');
+  });
+
+server.use('/assets', express.static('public'))
+
+  
+
 module.exports = server
