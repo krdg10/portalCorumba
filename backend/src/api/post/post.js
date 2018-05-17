@@ -4,8 +4,15 @@ const mongoose = restful.mongoose
 const postSchema = new mongoose.Schema({
     description: {type: String, required: true},
     tipo: {type: String, required: true},
-    done: {type: Boolean, default: false},
+    premium: {type: Boolean, default: false},
     name: {type: String},
+    rua: {type: String},
+    bairro: {type: String},
+    numero: {type: String},
+    telefone: {type: String},
+    email: {type: String},
+    cep: {type: String},
+    horario_funcionamento: {type: String},
     createdAt: { type: Date, default: Date.now }
 })
 

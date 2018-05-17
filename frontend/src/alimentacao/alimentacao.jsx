@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
+import Botoes from './botoes'
 import Card from '../template/card'
 const URL = 'http://localhost:3003/api/posts'
 
@@ -26,7 +27,7 @@ export default class Alimentacao extends Component {
         return (
             <div className='alimentacao'>
                 <br/> 
-               
+                <Botoes />
                 <Card tipo="alimentacao" list={this.state.list} />
                
 

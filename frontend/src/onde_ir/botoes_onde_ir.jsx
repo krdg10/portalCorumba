@@ -1,5 +1,5 @@
 import React from 'react'
-
+//colocar pontos turisticos, dentro de lazer passeios, noite, eventos turisticos.
 export default props => (
     <div id="botoes_hospedagem">
         <a type="button" className="btn btn-dark" href="#/onde_ir">Todos</a>

@@ -3,7 +3,6 @@ import {Router, Route, Redirect, hashHistory} from 'react-router'
 
 import Home from '../home/home'
 import Historia from '../historia/historia'
-import Informacoes from '../informacoes/informacoes'
 import Hospedagem from '../hospedagem/hospedagem'
 import Alimentacao from '../alimentacao/alimentacao'
 import Onde_Ir from '../onde_ir/onde_ir'
@@ -14,11 +13,15 @@ import Teste from '../teste/hotel'
 import Detail from '../info/info'
 import Lazer from '../lazer/lazer'
 import Noite from '../noite/noite'
+import Bar from '../bar/bar'
+import Restaurante from '../restaurante/restaurante'
+import Lanchonente from '../lanchonete/lanchonete'
+
+
 export default props =>(
     <Router history={hashHistory}>
         <Route path='/home' component={Home}/>
         <Route path='/historia' component={Historia}/>
-        <Route path='/informacoes' component={Informacoes} />
         <Route path='/hospedagem' component={Hospedagem} />
         <Route path='/alimentacao' component={Alimentacao} />
         <Route path='/onde_ir' component={Onde_Ir} />
@@ -35,7 +38,12 @@ export default props =>(
         <Route path='/noite' component={Noite} />
         <Route path='/noite/:id' component={Detail} />
         <Route path='/alimentacao/:id' component={Detail} />
-
+        <Route path='/bar' component={Bar} />
+        <Route path='/bar/:id' component={Detail} />
+        <Route path='/restaurante' component={Restaurante} />
+        <Route path='/lanchonete' component={Lanchonente} />
+        <Route path='/lanchonete/:id' component={Detail} />
+        <Route path='/restaurante/:id' component={Detail} />
 
         <Redirect from='*' to='/home'/>
     </Router>
