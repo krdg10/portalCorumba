@@ -4,7 +4,7 @@ import '../template/creative.css'
 import Menu from '../template/menu'
 import Header from '../template/header'
 import React from 'react'
-import Rodape from '../home/sectionFour'
+import Rodape from '../template/rodape'
 
 import Routes from './routes'
 //nao colocar conteiner na div

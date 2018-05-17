@@ -338,3 +338,7 @@ header.masthead p {
 .display {
   display: inline-block !important;
 }
+
+#contact{
+  padding: 1rem 0;
+}
