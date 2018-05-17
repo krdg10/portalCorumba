@@ -18,7 +18,7 @@ export default class Alimentacao extends Component {
   
    
     refresh(){
-        const search = `&tipo__regex=alimentacao` 
+        const search = `&alimentacaoPremium=true` 
         axios.get(`${URL}?sort=-createdAt${search}`)
             .then(resp => this.setState({...this.state, description: '', tipo: '', name: '', list: resp.data}))
     }
