@@ -32,7 +32,7 @@ export default class Detail extends Component {
     
     return (
       <div>
-        <h2>{this.props.params.id}</h2>
+        
         <Tratar list={this.state.list} />
 
         <Link to='/hospedagem'>Voltar para Hospedagem</Link>
