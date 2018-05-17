@@ -6,9 +6,7 @@ export default props => (
       <div className="row">
         <div className="col-lg-10 mx-auto">
           <h1 className="text-uppercase">
-            <strong>Portal de Turismo de Corumbá</strong>
-          </h1>
-          <hr />
+            </h1>
         </div>
        
       </div>
