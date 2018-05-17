@@ -7,7 +7,7 @@ import Botoes from '../lazer/botoes'
 import Card from '../template/card'
 const URL = 'http://localhost:3003/api/posts'
 
-export default class Noite extends Component {
+export default class EventoTuristico extends Component {
     constructor(props){
         super(props)
         this.state = {description: '', tipo: '', name: '', list: [] }
@@ -20,14 +20,14 @@ export default class Noite extends Component {
   
    
     refresh(){
-        const search = `&tipo=noite` 
+        const search = `&tipo=evento_turistico` 
         axios.get(`${URL}?sort=-createdAt${search}`)
             .then(resp => this.setState({...this.state, description: '', tipo: '', name: '', list: resp.data}))
     }
 
     render() {
         return (
-            <div className='noite'>
+            <div className='evento_turistico'>
                 <br/> 
                 <Botoes /> 
                 <br/>

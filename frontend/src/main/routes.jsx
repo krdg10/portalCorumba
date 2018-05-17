@@ -16,7 +16,9 @@ import Noite from '../noite/noite'
 import Bar from '../bar/bar'
 import Restaurante from '../restaurante/restaurante'
 import Lanchonente from '../lanchonete/lanchonete'
-
+import PontosTuristicos from '../pontosTuristicos/pontosTuristicos'
+import Passeio from '../passeio/passeio'
+import EventoTuristico from '../eventos_turisticos/eventos_turisticos'
 
 export default props =>(
     <Router history={hashHistory}>
@@ -44,6 +46,12 @@ export default props =>(
         <Route path='/lanchonete' component={Lanchonente} />
         <Route path='/lanchonete/:id' component={Detail} />
         <Route path='/restaurante/:id' component={Detail} />
+        <Route path='/pontos_turisticos' component={PontosTuristicos} />
+        <Route path='/pontos_turisticos/:id' component={Detail} />
+        <Route path='/passeio' component={Passeio} />
+        <Route path='/passeio/:id' component={Detail} />
+        <Route path='/evento_turistico' component={EventoTuristico} />
+        <Route path='/evento_turistico/:id' component={Detail} />
 
         <Redirect from='*' to='/home'/>
     </Router>

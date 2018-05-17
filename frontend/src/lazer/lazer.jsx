@@ -3,7 +3,7 @@ import axios from 'axios'
 
 
 
-import Botoes from '../onde_ir/botoes_onde_ir'
+import Botoes from './botoes'
 import Card from '../template/card'
 const URL = 'http://localhost:3003/api/posts'
 

@@ -15,6 +15,7 @@ const postSchema = new mongoose.Schema({
     horario_funcionamento: {type: String},
     ondeIrPremium: {type: Boolean, default: false},
     alimentacaoPremium: {type: Boolean, default: false},
+    lazerPremium: {type: Boolean, default: false}, 
     createdAt: { type: Date, default: Date.now }
 })
 
