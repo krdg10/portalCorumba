@@ -22,7 +22,7 @@ export default class Hospedagem extends Component {
   
    
     refresh(){
-        const search = `&premium=true` 
+        const search = `&premiumHospedagem=true` 
         axios.get(`${URL}?sort=-createdAt${search}`)
             .then(resp => this.setState({...this.state, description: '', tipo: '', name: '', list: resp.data}))
     }

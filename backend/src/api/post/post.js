@@ -4,7 +4,7 @@ const mongoose = restful.mongoose
 const postSchema = new mongoose.Schema({
     description: {type: String, required: true},
     tipo: {type: String, required: true},
-    premium: {type: Boolean, default: false},
+    hospedagemPremium: {type: Boolean, default: false},
     name: {type: String},
     rua: {type: String},
     bairro: {type: String},
@@ -13,6 +13,8 @@ const postSchema = new mongoose.Schema({
     email: {type: String},
     cep: {type: String},
     horario_funcionamento: {type: String},
+    ondeIrPremium: {type: Boolean, default: false},
+    alimentacaoPremium: {type: Boolean, default: false},
     createdAt: { type: Date, default: Date.now }
 })
 

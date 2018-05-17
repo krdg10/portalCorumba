@@ -31,7 +31,7 @@ export default class Bar extends Component {
                 <br/> 
                 <Botoes /> 
                 <br/>
-                <Card tipo="bar" list={this.state.list} />
+                <Card list={this.state.list} />
                
 
               

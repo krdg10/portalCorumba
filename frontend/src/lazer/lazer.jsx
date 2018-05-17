@@ -31,7 +31,7 @@ export default class Lazer extends Component {
                 <br/> 
                 <Botoes /> 
                 <br/>
-                <Card tipo="lazer" list={this.state.list} />
+                <Card list={this.state.list} />
                
 
               

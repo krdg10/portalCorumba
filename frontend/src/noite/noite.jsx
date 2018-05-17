@@ -31,7 +31,7 @@ export default class Noite extends Component {
                 <br/> 
                 <Botoes /> 
                 <br/>
-                <Card tipo="noite" list={this.state.list} />
+                <Card list={this.state.list} />
                
 
               

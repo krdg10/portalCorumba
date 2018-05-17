@@ -31,7 +31,7 @@ export default class Pousada extends Component {
                 <br/> 
                 <Botoes /> 
                 <br/>
-                <Card tipo="pousada" list={this.state.list} />
+                <Card list={this.state.list} />
                
 
               

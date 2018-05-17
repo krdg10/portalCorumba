@@ -28,7 +28,7 @@ export default class Alimentacao extends Component {
             <div className='alimentacao'>
                 <br/> 
                 <Botoes />
-                <Card tipo="alimentacao" list={this.state.list} />
+                <Card list={this.state.list} />
                
 
               
