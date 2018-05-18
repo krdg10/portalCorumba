@@ -8,7 +8,7 @@ export default props => {
                 <td>
                 <div className="media border p-3">
                     <img src={Imagem} alt="John Doe" className="mr-3 mt-3 rounded-circle" id="imagem_comentario" />
-                    <div className="media-body">
+                    <div className="media-body text-left">
                         <h4>{post.name} <small><i>Postado em {post.createdAt}</i></small></h4>
                         <p>{post.description}</p>
                     </div>
