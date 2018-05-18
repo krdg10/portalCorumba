@@ -1,8 +1,10 @@
 import React from 'react'
+import Card from '../template/card'
 
 export default props => (
     <section className="bg-primary" id="about">
     <div className="container">
+      <Card list={props.list}/>
       <div className="row">
         <div className="col-lg-8 mx-auto text-center">
           <h2 className="section-heading text-white">Conheça a cidade de Corumbá!</h2>

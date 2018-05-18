@@ -29,6 +29,7 @@ export default class Alimentacao extends Component {
                 <br/> 
                 <Botoes />
                 <Card list={this.state.list} />
+                <br />
                
 
               
