@@ -60,17 +60,18 @@ section {
 
 .section-heading {
   margin-top: 0;
+  padding-left:150px;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #212529;
+  background: #556B2F;
   text-shadow: none;
 }
 
 ::selection {
   color: #fff;
-  background: #212529;
+  background: #556B2F;
   text-shadow: none;
 }
 
@@ -302,10 +303,12 @@ header.masthead p {
   border-color: #556B2F;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  color: #fff;
+.btn-outline-dark:focus {
   background-color: #6B8E23 !important;
-  transition: 2s;
+
+}
+.btn-outline-dark:hover{
+  background-color: rgba(107, 142, 35, 0.9)
 }
 
 .btn-primary:active, .btn-primary:focus {
@@ -326,10 +329,6 @@ header.masthead p {
 #imagem_comentario{
   width:60px !important;
 }
-
-/*#botoes_hospedagem {
-  text-align:center;
-}*/
 
 .card {
   width:400px !important;
