@@ -12,7 +12,7 @@ export default props => {
                 <span key={post._id} className="display">
                 <div className="card" >
                     <Link to={`/${post.tipo}/${post._id}`}>
-                       <img className="card-img-top img-thumbnail img-fluid" src={img+post._id+'.jpg'} alt="Card image" />
+                       <img className="card-img-top img-thumbnail img-fluid" src={img+post._id+'.png'} alt="Card image" />
                     </Link>
                     <div className="card-body">
                         <Link to={`/${post.tipo}/${post._id}`}>

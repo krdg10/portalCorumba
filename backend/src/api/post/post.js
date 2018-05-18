@@ -16,6 +16,7 @@ const postSchema = new mongoose.Schema({
     ondeIrPremium: {type: Boolean, default: false},
     alimentacaoPremium: {type: Boolean, default: false},
     lazerPremium: {type: Boolean, default: false}, 
+    homePremium: {type: Boolean},
     createdAt: { type: Date, default: Date.now }
 })
 
