@@ -8,7 +8,7 @@ export default props => {
         const list = props.list || []
         return list.map(post => (
             <div key={post._id}>
-                <img height='200' src={img+post._id+'.jpg'} alt="Foto" />
+                <img height='200' src={img+post._id+'.jpg'} alt="Foto" className="img-fluid" />
                 {post.name} - {post.description} - {post.tipo} - {post._id}</div>
                       
            

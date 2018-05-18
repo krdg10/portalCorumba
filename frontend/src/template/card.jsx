@@ -11,13 +11,15 @@ export default props => {
            
                 <span key={post._id} className="display">
                 <div className="card" >
-                    <img className="card-img-top" src={img+post._id+'.jpg'} alt="Card image" />
+                    <Link to={`/${post.tipo}/${post._id}`}>
+                       <img className="card-img-top img-thumbnail img-fluid" src={img+post._id+'.jpg'} alt="Card image" />
+                    </Link>
                     <div className="card-body">
-                        <h4 className="card-title">{post.name}</h4>
-                        <p className="card-text">{post.description}</p>
                         <Link to={`/${post.tipo}/${post._id}`}>
-                            {post.name} - {post.description}
+                          <h4 className="card-title">{post.name}</h4>
                         </Link>
+                        <p className="card-text">{post.description}</p>
+                       
                     </div>
                 </div>
                 </span>

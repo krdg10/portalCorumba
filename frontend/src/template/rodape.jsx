@@ -8,7 +8,7 @@ export default props => (
           <h2 className="section-heading">Fale Conosco</h2>
           
           <p className="mb-5"> 
-            <input type="text" class="form-control" id="usr" placeholder='Nome' />
+            <input type="text" class="form-control" id="usr" placeholder='Nome'  />
             <br/>
             <input type="text" class="form-control" id="pwd" placeholder='Email' />
             <br />
