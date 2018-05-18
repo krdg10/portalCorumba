@@ -1,39 +1,13 @@
 import React from 'react'
 
 export default props => (
-    <section id="contact">
-    
-    <div className="container">
-     <h1 className="section-heading">Fale Conosco</h1>
 
-     <div className="row">
-       <div className="col-sm-6">
-         <form>
-
-           <div className="form-group">
-             <input type="text" className="form-control" id="nome" placeholder="Nome"/>
-           </div>
-
-           <div className="form-group">
-            
-             <input type="email" className="form-control" id="email" placeholder="Email"/>
-           </div>
-
-            <div className="form-group">
-             
-             <textarea type="mensagem" className="form-control" id="comment" placeholder="Mensagem"/>
-           </div>
-          
-           <button type="submit" className="btn btn-outline-dark">Enviar</button>
-
-         </form>
-       </div>
-  
-     </div>
-   
+  <div className="container">
+    <div className="row col-sm-6 text-center"> 
+    <h4> Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus </h4>
+  <a role="button" className="btn btn-dark" href="#/sobre_nos">Sobre Nós</a>
    </div>
-    
-  </section>
+ </div>
 ) 
 
 /*
