@@ -15,12 +15,12 @@ export default props => (
            </div>
 
            <div className="form-group">
-             <label for="email">Email</label>
+            
              <input type="email" className="form-control" id="email" placeholder="Email"/>
            </div>
 
             <div className="form-group">
-             <label for="mensagem">Mensagem</label>
+             
              <textarea type="mensagem" className="form-control" id="comment" placeholder="Mensagem"/>
            </div>
           
