@@ -17,24 +17,18 @@ export default class Detail extends Component {
   } 
   refresh(){
     
-    const search = `&_id=${this.props.params.id}` //pesquisa zoada. Só arrumar isso
+    const search = `&_id=${this.props.params.id}`
     axios.get(`${URL}?sort=-createdAt${search}`)
         .then(resp => this.setState({...this.state, description: '', tipo: '', name: '', list: resp.data}))
 
    
 }
 
-  render() {
-   // const { params } = this.props; substituto do this.props.params.id
-    
+  render() { 
     if(!this.props.params.id) return null;
-    
-    
     return (
-      <div>
-        
+      <div className="margin-left">
         <Tratar list={this.state.list} />
-
         <Link to='/hospedagem'>Voltar para Hospedagem</Link>
         <Comentario tipocomentario={this.props.params.id} />
       </div>

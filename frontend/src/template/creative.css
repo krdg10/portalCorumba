@@ -340,3 +340,12 @@ header.masthead p {
 .display {
   display: inline-block !important;
 }
+
+#texto-info {
+  text-align: center;
+}
+
+#comments {
+  margin-left: 100px;
+  margin-right: 100px;
+}
