@@ -16,14 +16,14 @@ import Imagem5 from '../../public/img/ufms.png'
           <div className="col-sm-2">
             <h4>SHOW</h4>
             <ul className="nav">
-              <li><a href="a">Sobre</a></li>
+              <li><a href="#/sobre_nos">Sobre</a></li>
             </ul>
           </div>
 
           <div className="col-sm-2">
             <h4>URSO</h4>
             <ul className="nav">
-               <li><a href="a">Desenvolvedores</a></li>
+               <li><a href="#">Desenvolvedores</a></li>
             </ul>
           </div>
 

@@ -21,10 +21,11 @@ import Passeio from '../passeio/passeio'
 import EventoTuristico from '../eventos_turisticos/eventos_turisticos'
 import SobreNos from '../sobre_nos/sobre_nos'
 import Erro from '../error/error'
-
+import Admin from '../admin/adicionar'
 
 export default props =>(
     <Router history={hashHistory}>
+        <Route path='/' component={Home} />
         <Route path='/home' component={Home}/>
         <Route path='/historia' component={Historia}/>
         <Route path='/hospedagem' component={Hospedagem} />
@@ -57,6 +58,7 @@ export default props =>(
         <Route path='/evento_turistico/:id' component={Detail} />
         <Route path='/sobre_nos' component={SobreNos} />
         <Route path='/error' component={Erro} />
+        <Route path='/admin' component={Admin} />
 
         <Redirect from='*' to='/error'/>
     </Router>
