@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-
+import { Router, Route, Link, hashHistory } from 'react-router'
 
 
 import Card from './card_adm'
@@ -31,7 +31,9 @@ export default class Admin_Delete extends Component {
     render() {
         return (
             <div className='excluir'>
-              
+                <Link to={`/admin`}>
+                Adicionar registros
+                </Link>
                 
                 <Card list={this.state.list} handleRemove={this.handleRemove} />
                

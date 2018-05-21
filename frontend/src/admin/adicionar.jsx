@@ -159,4 +159,4 @@ export default class Admin extends Component {
     }
 }
 
-/*criar exclusao, fazer apagar, criar login, colocar pra upar imagem */
+/*criar login, colocar pra upar imagem */

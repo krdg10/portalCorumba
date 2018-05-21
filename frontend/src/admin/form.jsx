@@ -1,10 +1,15 @@
 import React from 'react'
 import Grid from '../template/grid'
 import IconButton from '../template/iconButton'
+import { Router, Route, Link, hashHistory } from 'react-router'
+
 export default props => {
 
     return (
         <div role='form' className='comentarioForm'>
+            <Link to={`/admin_remove`}>
+                Remover registros
+            </Link>
             <Grid cols = '12 9 10'>
                <input id='name' className='form-control'
                     placeholder='Nome'
