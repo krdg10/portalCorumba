@@ -10,36 +10,108 @@ export default class Admin extends Component {
     
     constructor(props){
         super(props)
-        this.state = {description: '', tipo: '', name: '', rua: '', cep: '', bairro: '', list: [] }
+        this.state = {description: '', tipo: '', name: '', rua: '', cep: '', 
+        bairro: '', numero: '', email: '', telefone: '', 
+        horario_funcionamento: '', hospedagemPremium: '', ondeIrPremium: '',
+        alimentacaoPremium: '', lazerPremium: '', homePremium: '', list: [] }
         
 
-        this.handleChange = this.handleChange.bind(this)
-        this.handleChange2 = this.handleChange2.bind(this)
+        this.handleChangeDescription = this.handleChangeDescription.bind(this)
+        this.handleChangeTipo = this.handleChangeTipo.bind(this)
+        this.handleChangeName = this.handleChangeName.bind(this)
+        this.handleChangeRua = this.handleChangeRua.bind(this)
+        this.handleChangeCEP = this.handleChangeCEP.bind(this)
+        this.handleChangeBairro = this.handleChangeBairro.bind(this)
+        this.handleChangeNumero = this.handleChangeNumero.bind(this)
+        this.handleChangeEmail = this.handleChangeEmail.bind(this)
+        this.handleChangeTelefone = this.handleChangeTelefone.bind(this)
+        this.handleChangeHorario_Funcionamento = this.handleChangeHorario_Funcionamento.bind(this)
+        this.handleChangeHospedagemPremium = this.handleChangeHospedagemPremium.bind(this)
+        this.handleChangeOndeIrPremium = this.handleChangeOndeIrPremium.bind(this)
+        this.handleChangeAlimentacaoPremium = this.handleChangeAlimentacaoPremium.bind(this)
+        this.handleChangeLazerPremium = this.handleChangeLazerPremium.bind(this)
+        this.handleChangeHomePremium = this.handleChangeHomePremium.bind(this)
+
+
         this.handleAdd = this.handleAdd.bind(this)
         this.refresh()
        
     }
 
   
-   
-    handleChange(e){
+    handleChangeTelefone(e){
+        this.setState({...this.state, telefone: e.target.value })
+    }
+    handleChangeHospedagemPremium(e){
+        this.setState({...this.state, hospedagemPremium: e.target.value })
+    }
+    handleChangeOndeIrPremium(e){
+        this.setState({...this.state, ondeIrPremium: e.target.value })
+    }
+    handleChangeAlimentacaoPremium(e){
+        this.setState({...this.state, alimentacaoPremium: e.target.value })
+    }
+    handleChangeLazerPremium(e){
+        this.setState({...this.state, lazerPremium: e.target.value })
+    }
+    handleChangeHomePremium(e){
+        this.setState({...this.state, homePremium: e.target.value })
+    }
+    handleChangeDescription(e){
         this.setState({...this.state, description: e.target.value })
     }
-    handleChange2(e){
+    handleChangeName(e){
         this.setState({...this.state, name: e.target.value })
     }
+    handleChangeEmail(e){
+        this.setState({...this.state, email: e.target.value })
+    }
+    handleChangeRua(e){
+        this.setState({...this.state, rua: e.target.value })
+    }
+    handleChangeCEP(e){
+        this.setState({...this.state, cep: e.target.value })
+    }
+    handleChangeNumero(e){
+        this.setState({...this.state, numero: e.target.value })
+    }
+    handleChangeHorario_Funcionamento(e){
+        this.setState({...this.state, horario_funcionamento: e.target.value })
+    }
+    handleChangeBairro(e){
+        this.setState({...this.state, bairro: e.target.value })
+    }
+    handleChangeTipo(e){
+        this.setState({...this.state, tipo: e.target.value })
+    }
+    /* this.state = {description: '', tipo: '', name: '', rua: '', cep: '', 
+        bairro: '', numero: '', email: '', telefone: '', 
+        horario_funcionamento: '', hospedagemPremium: '', ondeIrPremium: '',
+        alimentacaoPremium: '', lazerPremium: '', homePremium: '', list: [] } */
     handleAdd(){
         const description = this.state.description//arrumar forma de passar mais parametros, no caso nome e tipo. Tipo é fixo entao é mais de boa. Quando deixei default na collection deu
         const name = this.state.name
         const tipo = this.state.tipo
-        axios.post(URL, {description, name, tipo})
+        const hospedagemPremium = this.state.hospedagemPremium
+        const rua = this.state.rua
+        const cep = this.state.cep
+        const bairro = this.state.bairro
+        const numero = this.state.numero
+        const email = this.state.email
+        const telefone = this.state.telefone
+        const horario_funcionamento = this.state.horario_funcionamento
+        const ondeIrPremium = this.state.ondeIrPremium
+        const alimentacaoPremium = this.state.alimentacaoPremium
+        const lazerPremium = this.state.lazerPremium
+        const homePremium = this.state.homePremium
+        axios.post(URL, {description, name, tipo, hospedagemPremium, rua, cep, bairro, numero, email, telefone,
+        horario_funcionamento, ondeIrPremium, alimentacaoPremium, lazerPremium, homePremium})
             .then(resp => this.refresh())
+            
     }
     refresh(){
-        const tipo = this.tipocomentario
-        const search = `&tipo=${tipo}` 
-        axios.get(`${URL}?sort=-createdAt${search}`)
-            .then(resp => this.setState({...this.state, description: '', tipo: '', name: '', list: resp.data}))
+        axios.get(`${URL}?sort=-createdAt`)
+            .then(resp => this.setState({...this.state, description: '', tipo: '', name: '', rua: '', cep: '', bairro: '', numero: '', email: '', telefone: '', horario_funcionamento: '', hospedagemPremium: '', ondeIrPremium: '', alimentacaoPremium: '', lazerPremium: '', homePremium: '', list: resp.data}))
     }
 
    
@@ -50,11 +122,27 @@ export default class Admin extends Component {
              <PostForm description={this.state.description} 
                     name={this.state.name}
                     handleAdd={this.handleAdd}
-                    handleChange={this.handleChange}
-                    handleChange2={this.handleChange2} />
+                    handleChangeAlimentacaoPremium={this.handleChangeAlimentacaoPremium}
+                    handleChangeBairro={this.handleChangeBairro}
+                    handleChangeCEP={this.handleChangeCEP}
+                    handleChangeDescription={this.handleChangeDescription}
+                    handleChangeEmail={this.handleChangeEmail}
+                    handleChangeHomePremium={this.handleChangeHomePremium}
+                    handleChangeHorario_Funcionamento={this.handleChangeHorario_Funcionamento}
+                    handleChangeHospedagemPremium={this.handleChangeHospedagemPremium}
+                    handleChangeLazerPremium={this.handleChangeLazerPremium}
+                    handleChangeName={this.handleChangeName}
+                    handleChangeNumero={this.handleChangeNumero}
+                    handleChangeOndeIrPremium={this.handleChangeOndeIrPremium}
+                    handleChangeRua={this.handleChangeRua}
+                    handleChangeTelefone={this.handleChangeTelefone}
+                    handleChangeTipo={this.handleChangeTipo}
+                    />
              
            
             </div>
         )
     }
 }
+
+/*criar exclusao, fazer apagar, criar login */
