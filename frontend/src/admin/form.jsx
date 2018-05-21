@@ -14,6 +14,35 @@ export default props => {
                     placeholder='Descriçao'
                     value={props.description} 
                     onChange={props.handleChangeDescription}></textarea>
+                
+                <input id='rua' className='form-control'
+                    placeholder='Rua'
+                    value={props.rua} 
+                    onChange={props.handleChangeRua}></input>
+                <input id='bairro' className='form-control'
+                    placeholder='Bairro'
+                    value={props.bairro} 
+                    onChange={props.handleChangeBairro}></input>
+                <input id='numero' className='form-control'
+                    placeholder='Numero'
+                    value={props.numero} 
+                    onChange={props.handleChangeNumero}></input>
+                <input id='cep' className='form-control'
+                    placeholder='CEP'
+                    value={props.cep} 
+                    onChange={props.handleChangeCEP}></input>
+                <input id='email' className='form-control'
+                    placeholder='Email'
+                    value={props.email} 
+                    onChange={props.handleChangeEmail}></input>
+                <input id='telefone' className='form-control'
+                    placeholder='Telefone'
+                    value={props.telefone} 
+                    onChange={props.handleChangeTelefone}></input>
+                <input id='horario_funcionamento' className='form-control'
+                    placeholder='Horario de Funcionamento'
+                    value={props.horario_funcionamento} 
+                    onChange={props.handleChangeHorario_Funcionamento}></input>
                 <select id="tipo" className='form-control' onChange={props.handleChangeTipo} >
                     <option value="hotel">Hotel</option>
                     <option value="hostel">Hostel</option>
@@ -76,34 +105,6 @@ export default props => {
                     <input type="radio" className="form-check-input" name="homePremium" id="homePremium" value='true' onChange={props.handleChangeHomePremium}/>true
                     </label>
                 </div>
-                <input id='rua' className='form-control'
-                    placeholder='Rua'
-                    value={props.rua} 
-                    onChange={props.handleChangeRua}></input>
-                <input id='bairro' className='form-control'
-                    placeholder='Bairro'
-                    value={props.bairro} 
-                    onChange={props.handleChangeBairro}></input>
-                <input id='numero' className='form-control'
-                    placeholder='Numero'
-                    value={props.numero} 
-                    onChange={props.handleChangeNumero}></input>
-                <input id='cep' className='form-control'
-                    placeholder='CEP'
-                    value={props.cep} 
-                    onChange={props.handleChangeCEP}></input>
-                <input id='email' className='form-control'
-                    placeholder='Email'
-                    value={props.email} 
-                    onChange={props.handleChangeEmail}></input>
-                <input id='telefone' className='form-control'
-                    placeholder='Telefone'
-                    value={props.telefone} 
-                    onChange={props.handleChangeTelefone}></input>
-                <input id='horario_funcionamento' className='form-control'
-                    placeholder='Horario de Funcionamento'
-                    value={props.horario_funcionamento} 
-                    onChange={props.handleChangeHorario_Funcionamento}></input>
                 
 
 

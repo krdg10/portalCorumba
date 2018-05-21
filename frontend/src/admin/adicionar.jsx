@@ -121,6 +121,20 @@ export default class Admin extends Component {
             <div className='admin'> 
              <PostForm description={this.state.description} 
                     name={this.state.name}
+                    rua={this.state.rua}
+                    bairro={this.state.bairro}
+                    alimentacaoPremium={this.state.alimentacaoPremium}
+                    cep={this.state.cep}
+                    email={this.state.email}
+                    homePremium={this.state.homePremium}
+                    horario_funcionamento={this.state.horario_funcionamento}
+                    hospedagemPremium={this.hospedagemPremium}
+                    lazerPremium={this.lazerPremium}
+                    numero={this.state.numero}
+                    ondeIrPremium={this.state.ondeIrPremium}
+                    telefone={this.state.telefone}
+                    tipo={this.state.tipo}
+                    
                     handleAdd={this.handleAdd}
                     handleChangeAlimentacaoPremium={this.handleChangeAlimentacaoPremium}
                     handleChangeBairro={this.handleChangeBairro}
@@ -145,4 +159,4 @@ export default class Admin extends Component {
     }
 }
 
-/*criar exclusao, fazer apagar, criar login */
+/*criar exclusao, fazer apagar, criar login, colocar pra upar imagem */

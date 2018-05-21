@@ -22,7 +22,7 @@ import EventoTuristico from '../eventos_turisticos/eventos_turisticos'
 import SobreNos from '../sobre_nos/sobre_nos'
 import Erro from '../error/error'
 import Admin from '../admin/adicionar'
-
+import Admin_exclude from '../admin/excluir'
 export default props =>(
     <Router history={hashHistory}>
         <Route path='/' component={Home} />
@@ -59,6 +59,7 @@ export default props =>(
         <Route path='/sobre_nos' component={SobreNos} />
         <Route path='/error' component={Erro} />
         <Route path='/admin' component={Admin} />
+        <Route path='/admin_remove' component={Admin_exclude} />
 
         <Redirect from='*' to='/error'/>
     </Router>

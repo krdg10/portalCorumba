@@ -1,7 +1,7 @@
 
 import React from 'react'
-import Imagem from '../../public/img/img_avatar1.png'
 import { Router, Route, Link, hashHistory } from 'react-router'
+import IconButton from '../template/iconButton'
 
 export default props => {
     const renderRows = () =>{
@@ -12,21 +12,22 @@ export default props => {
                 <span key={post._id} className="display">
                 <div className="card" >
                     <Link to={`/${post.tipo}/${post._id}`}>
-                       <img className="card-img-top img-thumbnail img-fluid" src={img+post._id+'.png'} alt="Card image" />
+                       <img className="card-img-top img-thumbnail img-fluid"  alt="Card image" />
                     </Link>
                     <div className="card-body">
                         <Link to={`/${post.tipo}/${post._id}`}>
                           <h4 className="card-title">{post.name}</h4>
                         </Link>
                         <p className="card-text"></p>
-                       
+                        <IconButton style='primary' icon='plus' onClick={() => props.handleRemove(post)}></IconButton>
+
                     </div>
                 </div>
                 </span>
            
         ))
     }
-    //link to tava com props.tipo
+   
 
     return (
        
@@ -37,33 +38,4 @@ export default props => {
     )
 }
 
-/*
-export default props => {
-    const renderRows = () =>{
-        const list = props.list || []
-        return list.map(post => (
-           
-                <span key={post._id} className="display">
-                <div className="card" >
-                    <img className="card-img-top" src={Imagem} alt="Card image" />
-                    <div className="card-body">
-                        <h4 className="card-title">{post.name}</h4>
-                        <p className="card-text">{post.description}</p>
-                        <a href="#" className="btn btn-primary">See Profile</a>
-                    </div>
-                </div>
-                </span>
-           
-        ))
-    }
-
-    return (
-       
-        <div>
-           {renderRows()}
-          
-        </div>
-    )
-}
-
-anterior  */
+/*no onclick do icon remove ver se da pra passar só o id e nao todo o objeto */
