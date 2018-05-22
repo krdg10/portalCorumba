@@ -16,7 +16,7 @@ export default props => {
                     value={props.name} 
                     onChange={props.handleChangeName}></input>
                 <textarea id='description' className='form-control'
-                    placeholder='Descriçao'
+                    placeholder='Descriçao(Obrigatório)'
                     value={props.description} 
                     onChange={props.handleChangeDescription}></textarea>
                 
@@ -48,8 +48,12 @@ export default props => {
                     placeholder='Horario de Funcionamento'
                     value={props.horario_funcionamento} 
                     onChange={props.handleChangeHorario_Funcionamento}></input>
+                <input id='site' className='form-control'
+                    placeholder='Site'
+                    value={props.site} 
+                    onChange={props.handleChangeSite}></input>
                 <select id="tipo" className='form-control' onChange={props.handleChangeTipo} >
-                    <option value="hotel">Hotel</option>
+                    <option value="hotel">Hotel(Obrigatório selecionar um)</option>
                     <option value="hostel">Hostel</option>
                     <option value="pousada">Pousada</option>
                     <option value="restaurante">Restaurante</option>

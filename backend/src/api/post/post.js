@@ -17,6 +17,7 @@ const postSchema = new mongoose.Schema({
     alimentacaoPremium: {type: Boolean, default: false},
     lazerPremium: {type: Boolean, default: false}, 
     homePremium: {type: Boolean},
+    site: {type: String},
     createdAt: { type: Date, default: Date.now }
 })
 
