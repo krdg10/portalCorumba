@@ -59,3 +59,6 @@ export default class Admin_Delete extends Component {
         )
     }
 }
+
+//pensei em colocar this.state.tipo no parametro e tirar o refresh mas n funfou
+//tirar a atualização do state.tipo na hora do refresh
