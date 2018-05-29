@@ -321,6 +321,12 @@ header.masthead p {
   color: #FFF;
 }
 
+.btn-outline-dark:not(:disabled):not(.disabled).active, .btn-outline-dark:not(:disabled):not(.disabled):active, .show>.btn-outline-dark.dropdown-toggle {
+  color: #fff;
+  background-color: #6B8E23;
+  border-color: #6B8E23;
+}
+
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(85, 107, 47, 0.5) !important;
 }
