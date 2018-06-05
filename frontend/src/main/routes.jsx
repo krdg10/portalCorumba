@@ -1,5 +1,7 @@
 import React from 'react'
-import {Router, Route, Redirect, hashHistory} from 'react-router'
+import {Router, Route, Redirect, hashHistory, browserHistory} from 'react-router'
+import { requireAuth } from '../utils/AuthService';
+
 
 import Home from '../home/home'
 import Historia from '../historia/historia'
@@ -23,6 +25,9 @@ import SobreNos from '../sobre_nos/sobre_nos'
 import Erro from '../error/error'
 import Admin from '../admin/adicionar'
 import Admin_exclude from '../admin/excluir'
+import Login from '../admin/tela_login'
+import Callback from '../admin/Callback'
+
 export default props =>(
     <Router history={hashHistory}>
         <Route path='/' component={Home} />
@@ -58,9 +63,13 @@ export default props =>(
         <Route path='/evento_turistico/:id' component={Detail} />
         <Route path='/sobre_nos' component={SobreNos} />
         <Route path='/error' component={Erro} />
-        <Route path='/admin' component={Admin} />
-        <Route path='/admin_remove' component={Admin_exclude} />
+        <Route path='/admin' component={Admin}   />
+        <Route path='/admin_remove' component={Admin_exclude}  />
+        
 
         <Redirect from='*' to='/error'/>
     </Router>
 )
+
+//<Route path='/login' component={Login}/>
+//     <Route path='/callback' component={Callback} /> colocar la dentro dps

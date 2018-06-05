@@ -10,7 +10,17 @@ export default props => {
             
            
                     <div key={post._id} id="texto-info">
-                    <img height='200' width="200" src={img+post._id+'.png'} alt="Foto"/> - {post.name} - {post.description} - {post.tipo} - {post._id}
+                    <img height='200' width="200" src={img+post._id+'.png'} alt="Foto"/>  <br />
+                    Nome: {post.name}  <br />
+                    Descrição: {post.description} <br />
+                    Rua: {post.rua} <br />
+                    Bairro: {post.bairro}  <br />
+                    Numero: {post.numero} <br />
+                    CEP: {post.cep} <br />
+                    Telefone: {post.telefone} <br />
+                    Email: {post.email} <br />
+                    Tipo: {post.tipo} <br />
+                    {post._id} <br />
                 
                 
                    </div>

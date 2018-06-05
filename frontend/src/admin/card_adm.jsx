@@ -13,14 +13,16 @@ export default props => {
                 <span key={post._id} className="display">
                 <div className="card" >
                     <Link to={`/${post.tipo}/${post._id}`}>
-                       <img className="card-img-top img-thumbnail img-fluid" src={img+post._id+'.png'} alt="Card image" />
+                       <img className="card-img-top img-thumbnail img-fluid" 
+                       src={img+post._id+'.png'} alt="Card image" />
                     </Link>
                     <div className="card-body">
                         <Link to={`/${post.tipo}/${post._id}`}>
                           <h4 className="card-title">{post.name}</h4>
                         </Link>
                         <p className="card-text"></p>
-                        <IconButton style='primary' icon='plus' onClick={() => props.handleRemove(post)}></IconButton>
+                        <IconButton style='primary' icon='plus' 
+                        onClick={() => props.handleRemove(post)}></IconButton>
 
                     </div>
                 </div>
@@ -33,7 +35,8 @@ export default props => {
     return (
        
         <div>
-            <select id="tipo" className='form-control' onChange={props.handleChangeTipo} onClick={props.refresh}>
+            <select id="tipo" className='form-control' onChange={props.handleChangeTipo} 
+            onClick={props.refresh}>
                     <option value="">Todos</option>
                     <option value="hotel">Hotel</option>
                     <option value="hostel">Hostel</option>

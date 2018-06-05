@@ -33,11 +33,11 @@ export default class Admin_Delete extends Component {
         const search = `&tipo=${tipo}` 
         if(tipo==''){
             axios.get(`${URL}?sort=-createdAt`)
-            .then(resp => this.setState({...this.state, description: '', tipo: '', name: '', list: resp.data}))
+            .then(resp => this.setState({...this.state, list: resp.data}))
         }
         else{
             axios.get(`${URL}?sort=-createdAt${search}`)
-            .then(resp => this.setState({...this.state, description: '', tipo: '', name: '', list: resp.data}))
+            .then(resp => this.setState({...this.state, list: resp.data}))
         }
         
        
@@ -51,7 +51,8 @@ export default class Admin_Delete extends Component {
                 </Link>
                 
                 
-                <Card list={this.state.list} handleRemove={this.handleRemove} handleChangeTipo={this.handleChangeTipo} refresh={this.refresh} />
+                <Card list={this.state.list} handleRemove={this.handleRemove} 
+                handleChangeTipo={this.handleChangeTipo} refresh={this.refresh} />
                
 
               
