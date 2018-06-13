@@ -1,6 +1,6 @@
 import React from 'react'
 import {Router, Route, Redirect, hashHistory, browserHistory} from 'react-router'
-import { requireAuth } from '../utils/AuthService';
+//import { requireAuth } from '../utils/AuthService';
 
 
 import Home from '../home/home'
@@ -25,8 +25,8 @@ import SobreNos from '../sobre_nos/sobre_nos'
 import Erro from '../error/error'
 import Admin from '../admin/adicionar'
 import Admin_exclude from '../admin/excluir'
-import Login from '../admin/tela_login'
-import Callback from '../admin/Callback'
+//import Login from '../admin/tela_login'
+//import Callback from '../admin/Callback'
 
 export default props =>(
     <Router history={hashHistory}>

@@ -18,8 +18,16 @@ export default class Historia extends Component {
         this.handleChange = this.handleChange.bind(this)
         this.handleChange2 = this.handleChange2.bind(this)
         this.handleAdd = this.handleAdd.bind(this)
+        this.do_bom()
         this.refresh()
        
+    }
+
+    do_bom(x){
+        var data = new Date(x);
+     // console.log(data.getDate())
+        return data;
+
     }
 
   
@@ -54,7 +62,7 @@ export default class Historia extends Component {
                     handleAdd={this.handleAdd}
                     handleChange={this.handleChange}
                     handleChange2={this.handleChange2} />
-             <Comentario list={this.state.list} />
+             <Comentario list={this.state.list} do_bom={this.do_bom()} teste=''/>
            
             </div>
         )

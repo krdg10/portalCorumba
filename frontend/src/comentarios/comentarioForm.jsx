@@ -4,8 +4,10 @@ import IconButton from '../template/iconButton'
 export default props => {
 
     return (
+
+        
         <div role='form' className='comentarioForm'>
-            <Grid cols = '12 9 10'>
+            <div className="container">
                <input id='name' className='form-control'
                     placeholder='Nome'
                     value={props.name} 
@@ -14,12 +16,16 @@ export default props => {
                     placeholder='Adicione um comentário'
                     value={props.description} 
                     onChange={props.handleChange}></textarea>
-
-            </Grid>
+                    <span className="align-middle">
+                    <button className="btn btn-outline-dark" onClick={props.handleAdd}>Enviar</button>
+                    </span>
+            </div>
     
-            <Grid cols ='12 3 2'>
-                <IconButton style='primary' icon='plus' onClick={props.handleAdd}></IconButton>
-            </Grid>
+          
         </div>
     )
 }
+
+//<Grid cols ='12 3 2'>
+               
+//</Grid>
