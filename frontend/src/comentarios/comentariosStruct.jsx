@@ -24,7 +24,16 @@ export default props => {
     }
 
     return (
-        <table className='table'>
+
+        <div className="container">
+        <hr />
+            <h3>Comentários</h3>
+            {renderRows()}
+        </div> 
+    )
+}
+
+/*<table className='table'>
             <thead>
                 <tr>
                     <th>Comentarios</th>
@@ -33,6 +42,4 @@ export default props => {
             <tbody>
                 {renderRows()}
             </tbody>
-        </table>
-    )
-}
+        </table> */

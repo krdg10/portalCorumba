@@ -384,6 +384,20 @@ footer{
   	font-size: 18px;
   	text-transform: uppercase;
   }
+
+  #rodape a{
+    color: white; 
+  }
+
+  #rodape ul{
+    list-style-type: none;
+  }
+  
+
+  #historia{
+    margin-top: 100px ;
+
+  }
   
   .img-logo{
   	height: 128px;
