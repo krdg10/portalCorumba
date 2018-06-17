@@ -8,10 +8,15 @@ export default props => {
         
         <div role='form' className='comentarioForm'>
             <div className="container">
-               <input id='name' className='form-control'
+             
+             <div className="form-group">
+                <input id='name' className='form-control'
                     placeholder='Nome'
                     value={props.name} 
                     onChange={props.handleChange2}></input>
+              </div>
+             
+              <div className="form-group">
                 <textarea id='description' className='form-control'
                     placeholder='Adicione um comentário'
                     value={props.description} 
@@ -19,6 +24,8 @@ export default props => {
                     <span className="align-middle">
                     <button className="btn btn-outline-dark" onClick={props.handleAdd}>Enviar</button>
                     </span>
+                </div>
+            
             </div>
     
           
