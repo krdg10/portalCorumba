@@ -15,7 +15,7 @@ import Imagem5 from '../../public/img/ufms.png'
       </div>
 
       <div className="col-md-2 ">
-        <h4>Company</h4>
+        <h4>Mapa do Site</h4>
         <ul>
            <li><a href="#/sobre_nos">Sobre</a></li>
           <li><a href="a">Empregos</a></li>
@@ -27,9 +27,8 @@ import Imagem5 from '../../public/img/ufms.png'
       <div className="col-md-2 ">
         <h4>Comunidades</h4>
         <ul>
-           <li><a href="a">Artistas</a></li>
+           
           <li><a href="a">Desenvolvedores</a></li>
-          <li><a href="a">Marcas</a></li>
         </ul>
       </div>
 

@@ -30,7 +30,8 @@ export default props => {
 
     return (
        
-        <div>
+        <div className="container">
+       
            {renderRows()}
           
         </div>

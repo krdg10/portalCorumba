@@ -12,7 +12,7 @@ export default props => {
                     <div className="media border p-3">
                         <img src={Imagem} alt="John Doe" className="mr-3 mt-3 rounded-circle" id="imagem_comentario" />
                         <div className="media-body text-left">
-                            <h4>{post.name} <small><i>Postado em {teste.getFullYear()+'/'+(teste.getMonth()+1)+'/'+teste.getDay()} {teste.getHours()+':'+teste.getMinutes()}</i></small></h4>
+                            <h4>{post.name} <small><i>Postado em {teste.getDate()+'/'+(teste.getMonth()+1)+'/'+teste.getFullYear()} {teste.getHours()+':'+teste.getMinutes()}</i></small></h4>
                             <p>{post.description}</p>
                         
                         </div>
@@ -26,9 +26,15 @@ export default props => {
     return (
 
         <div className="container">
-        <hr />
+            <div className="row" >
+               <div className="col-md-10"> 
             <h3>Comentários</h3>
+
+                 <hr className="coment" />
             {renderRows()}
+
+                </div>
+            </div>
         </div> 
     )
 }
