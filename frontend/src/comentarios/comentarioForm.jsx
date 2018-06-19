@@ -10,6 +10,7 @@ export default props => {
             <div className="container">
               <div className="row">
                 <div className="col-md-10">
+                   <h3 className="teste"> Deixe seu comentário! </h3>
                    <div className="form-group">
                      <input id='name' className='form-control'
                       placeholder='Nome'

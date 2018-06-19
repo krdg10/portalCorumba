@@ -8,11 +8,11 @@ export default props => {
             return (
                 <tr key={post._id}>
                     <td>
-                    { post.createdAt }         
+                     
                     <div className="media border p-3">
                         <img src={Imagem} alt="John Doe" className="mr-3 mt-3 rounded-circle" id="imagem_comentario" />
                         <div className="media-body text-left">
-                            <h4>{post.name} <small><i>Postado em {teste.getDate()+'/'+(teste.getMonth()+1)+'/'+teste.getFullYear()} {teste.getHours()+':'+teste.getMinutes()}</i></small></h4>
+                            <h4>{post.name} <small><i>Postado em {("0"+ teste.getDate()).slice(-2)+'/'+("0"+(teste.getMonth()+1)).slice(-2)+'/'+teste.getFullYear()} - {("0"+ teste.getHours()).slice(-2)+':'+ ("0"+ teste.getMinutes()).slice(-2)}</i></small></h4>
                             <p>{post.description}</p>
                         
                         </div>
@@ -39,6 +39,10 @@ export default props => {
     )
 }
 
+
+/*
+  { post.createdAt }      
+*/
 /*<table className='table'>
             <thead>
                 <tr>

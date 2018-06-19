@@ -1,4 +1,3 @@
-
 import React from 'react'
 
 
@@ -8,8 +7,9 @@ export default props => {
         const list = props.list || []
         return list.map(post => (
             
-           
-                    <div key={post._id} id="texto-info">
+             <div className="container">
+                 <div className="row">
+                    <div key={post._id} id="texto-info" className="col-md-10 text-justify">
                     <img height='200' width="200" src={img+post._id+'.png'} alt="Foto"/>  <br />
                     Nome: {post.name}  <br />
                     Descrição: {post.description} <br />
@@ -22,20 +22,23 @@ export default props => {
                     Tipo: {post.tipo} <br />
                     {post._id} <br />
                 
-                
+           
+
                    </div>
+                </div>  
+            </div>
         ))
     }
     
 
     return (
        
-       <div className="container">
-            <div className="row">
-          
+    
+            <div>
            {renderRows()}
-          
             </div>
-        </div>
+        
+           
+     
     )
 }

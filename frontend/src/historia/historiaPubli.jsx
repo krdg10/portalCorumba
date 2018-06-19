@@ -24,7 +24,7 @@ export default props => {
             <div className="row"> 
                 <div className="col-md-10 text-justify">
                     <h2>História de Corumbá</h2>
-
+                        <hr className="coment" />
                      {renderRows()}
 
                     <p>A área do atual município de Corumbá foi explorada pela primeira vez por volta de 1524 pelo português Aleixo Garcia, que ali chegou em busca de ouro. Com o nome de origem tupi-guarani Curupah – que significa “lugar distante” – e,

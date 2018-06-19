@@ -14,12 +14,13 @@ hr {
   border-color: #556B2F;
 }
 
+
 .coment{
   width: auto;
   border-width: 3px;
   border-color: #556B2F;
 }
-
+/**/
 .histimg{
   margin-top: 10px;
   margin-bottom: 15px;
@@ -50,6 +51,10 @@ a:hover {
   color: #556B2F;
 }
 
+a:active{
+  color: #556B2F;
+}
+
 h1,
 h2,
 h3,
@@ -63,6 +68,14 @@ h6 {
 
 .container{
   margin-right: auto; margin-left: auto; padding-left: 15px; padding-right: 15px;
+}
+
+.form-group{
+  margin-top: 20px;
+}
+
+.teste{
+  margin-top: 40px;
 }
 
 .bg-primary {
@@ -365,6 +378,7 @@ header.masthead p {
     height: 359px;
 
 }
+
 
 #imagem_comentario{
   width:60px !important;

@@ -17,10 +17,11 @@ import Imagem5 from '../../public/img/ufms.png'
       <div className="col-md-2 ">
         <h4>Mapa do Site</h4>
         <ul>
-           <li><a href="#/sobre_nos">Sobre</a></li>
-          <li><a href="a">Empregos</a></li>
-          <li><a href="a">Imprensa</a></li>
-          <li><a href="a">Novidades</a></li>
+           <li><a href="#/sobre_nos">Sobre Nós | Contato</a></li>
+          <li><a href="#/historia">História da Cidade</a></li>
+          <li><a href="#/hospedagem">Hospedagem</a></li>
+          <li><a href="#/alimentacao">Alimentação</a></li>
+          <li><a href="#/onde_ir">Onde ir</a></li>
         </ul>
       </div>
 
