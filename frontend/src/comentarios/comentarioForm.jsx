@@ -9,7 +9,7 @@ export default props => {
         <div role='form' className='comentarioForm'>
             <div className="container">
               <div className="row">
-                <div className="col-md-10">
+                <div className="col-md-9">
                    <h3 className="teste"> Deixe seu comentário! </h3>
                    <div className="form-group">
                      <input id='name' className='form-control'

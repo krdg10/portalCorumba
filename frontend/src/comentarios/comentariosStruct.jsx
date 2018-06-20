@@ -27,7 +27,7 @@ export default props => {
 
         <div className="container">
             <div className="row" >
-               <div className="col-md-10"> 
+               <div className="col-md-9"> 
             <h3>Comentários</h3>
 
                  <hr className="coment" />
