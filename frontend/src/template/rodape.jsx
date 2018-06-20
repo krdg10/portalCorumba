@@ -1,13 +1,10 @@
 
 import React from 'react'
-import Imagem from '../../public/img/renan.png'
-import Imagem2 from '../../public/img/twitter.png'
-import Imagem3 from '../../public/img/facebook.png'
-import Imagem4 from '../../public/img/instagram.png'
-import Imagem5 from '../../public/img/ufms.png'
+
  
  export default props => (  
-  <footer id="rodape">
+ 
+ <footer id="rodape">
   <div className="container-fluid">
     <div className="row">
       <div className="col-md-2 d-flex justify-content-md-end ">
@@ -42,14 +39,22 @@ import Imagem5 from '../../public/img/ufms.png'
 
       <div className="col-md-4">
         <ul className="nav d-flex justify-content-md-start">
-        <li className="item-rede-social"><a href="a"><img src={Imagem2} alt="twitter" /></a></li>
-              <li className=" item-rede-social"><a href="a"><img src={Imagem3} alt="facebook" /></a></li>
-              <li className=" item-rede-social"><a href="a"><img src={Imagem4} alt="instagram" /></a></li>
+        <li className="item-rede-social"><a href="a" className="fa fa-twitter" alt="twitter"></a></li>
+              <li className=" item-rede-social"><a href="a" className="fa fa-facebook" alt="facebook" ></a></li>
+              <li className=" item-rede-social"><a href="a" className="fa fa-instagram"alt="instagram" ></a></li>
         </ul>
       </div>
-
+      
     </div>
+
+
   </div>
+
   </footer>
+   
  
  )
+
+ /*      <li className="item-rede-social"><a href="a"><img src={Imagem2} alt="twitter" /></a></li>
+              <li className=" item-rede-social"><a href="a"><img src={Imagem3} alt="facebook" /></a></li>
+              <li className=" item-rede-social"><a href="a"><img src={Imagem4} alt="instagram" /></a></li>*/

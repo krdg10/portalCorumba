@@ -5,6 +5,7 @@ import Menu from '../template/menu'
 import Header from '../template/header'
 import React from 'react'
 import Rodape from '../template/rodape'
+import Assinatura from '../template/assinatura'
 
 import Routes from './routes'
 //nao colocar conteiner na div
@@ -15,5 +16,6 @@ export default props => (
         <Header />
         <Routes />
         <Rodape />
+        <Assinatura />
     </div>
 )

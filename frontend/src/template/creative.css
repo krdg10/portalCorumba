@@ -14,6 +14,13 @@ hr {
   border-color: #556B2F;
 }
 
+.fa{
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
 
 .coment{
   width: auto;
@@ -67,7 +74,10 @@ h6 {
 }
 
 .container{
-  margin-right: auto; margin-left: auto; padding-left: 15px; padding-right: 15px;
+  margin-right: auto; 
+  margin-left: auto; 
+  padding-left: 15px; padding-right: 15px;
+  text-align: center;
 }
 
 .form-group{
@@ -379,7 +389,6 @@ header.masthead p {
 
 }
 
-
 #imagem_comentario{
   width:60px !important;
 }
@@ -400,16 +409,6 @@ header.masthead p {
   margin-left: 100px;
   margin-right: 100px;
 }
-footer{
-  	background-color:rgba(85, 107, 47, 0.8);
-    padding: 50px 0px 20px 0px;
-    position: relative;
-    display: block;
-    width: 100%;
-    margin-top: 50px;
-  
-  }
-  
   
   .navbar-inverse .navbar-nav>li>a, footer .nav a{
   	color: white;
@@ -437,6 +436,24 @@ footer{
     list-style-type: none;
   }
   
+  #rodape{
+    background-color:rgba(85, 107, 47, 0.8);
+    padding: 50px 0px 20px 0px;
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: 180px;
+    margin-bottom: 60px;
+  }
+
+  #assinatura{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center; 
+    padding-left: 80px;
+    font-family: "Raleway";
+  
+  }
 
   #historia{
     margin-top: 100px ;
@@ -459,5 +476,7 @@ footer{
   }
   
   .ufms{
-    margin-left: 20px;
+   width: 60px;
+   height: 60px;
+   margin-left: 10px;
   } 
