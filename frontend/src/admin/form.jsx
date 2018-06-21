@@ -88,7 +88,8 @@ export default props => {
                     
                     <div className="form-group">
                         <select id="tipo" className='form-control' onChange={props.handleChangeTipo} >
-                            <option value="hotel">Hotel(Obrigatório selecionar um)</option>
+                            <option value="">Selecione</option>
+                            <option value="hotel">Hotel</option>
                             <option value="hostel">Hostel</option>
                             <option value="pousada">Pousada</option>
                             <option value="restaurante">Restaurante</option>
