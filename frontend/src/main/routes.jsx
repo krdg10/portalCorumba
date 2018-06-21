@@ -25,6 +25,7 @@ import SobreNos from '../sobre_nos/sobre_nos'
 import Erro from '../error/error'
 import Admin from '../admin/adicionar'
 import Admin_exclude from '../admin/excluir'
+import Servicos from '../servicos/servicos'
 //import Login from '../admin/tela_login'
 //import Callback from '../admin/Callback'
 
@@ -54,6 +55,7 @@ export default props =>(
         <Route path='/error' component={Erro} />
         <Route path='/admin' component={Admin}   />
         <Route path='/admin_remove' component={Admin_exclude}  />
+        <Route path='/servicos' component={Servicos}  />
         
 
         <Redirect from='*' to='/error'/>

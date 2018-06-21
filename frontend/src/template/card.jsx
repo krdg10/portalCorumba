@@ -18,7 +18,7 @@ export default props => {
                         <img className=" img-thumbnail img-fluid" src={img+post._id+'.png'} alt="Card image" />
                         </Link>
                         <div className="card-body">
-                            <Link to={`/${post.tipo}/${post._id}/${post.tipo}`}>
+                            <Link to={`/detail/${post._id}/${post.tipo}`}>
                             <h4 className="card-title">{post.name}</h4>
                             </Link>
                             <p className="card-text"></p>

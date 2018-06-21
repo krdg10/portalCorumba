@@ -10,14 +10,7 @@ import Img8 from '../../public/img/hist8.png'
 
 
 export default props => {
-    const renderRows = () =>{
-        const list = props.list || []
-        return list.map(post => (
-            <tr key={post._id}>
-                <td>{post.description}</td>
-            </tr>
-        ))
-    }
+   
     return (
         
        <div className="container" id="historia">
@@ -25,7 +18,7 @@ export default props => {
                 <div className="col-md-9 text-justify">
                     <h2>História de Corumbá</h2>
                         <hr className="coment" />
-                     {renderRows()}
+                    
 
                     <p>A área do atual município de Corumbá foi explorada pela primeira vez por volta de 1524 pelo português Aleixo Garcia, que ali chegou em busca de ouro. Com o nome de origem tupi-guarani Curupah – que significa “lugar distante” – e,
                          depois de ter outras denominações ao longo de sua história, 

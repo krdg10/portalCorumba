@@ -61,6 +61,16 @@ export default class Detail extends Component {
         </div>
       );
     }
+    else if(this.props.params.tipo=='servicos'){
+      return (
+        <div className="margin-left">
+         <br/> 
+  
+          <Tratar list={this.state.list} />
+          <Comentario tipocomentario={this.props.params.id} />
+        </div>
+      );
+    }
     return null;
   }
 }

@@ -30,7 +30,6 @@ export default class Historia extends Component {
         return (
             <div className='publicacoes'> 
             <left> <Publicacao list={this.state.list} /></left>
-             <Comentario tipocomentario="histoComentario" />
             </div>
         )
     }
