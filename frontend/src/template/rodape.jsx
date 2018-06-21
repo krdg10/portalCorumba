@@ -4,7 +4,7 @@ import React from 'react'
  
  export default props => (  
  
- <footer id="rodape">
+ <footer id="rodape" className="background">
   <div className="container-fluid">
     <div className="row">
       <div className="col-md-2 d-flex justify-content-md-end ">

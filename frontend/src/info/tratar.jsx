@@ -33,7 +33,7 @@ export default props => {
            
                    </div>
                  
-                    <div id="background" className="col-md-3 square">     
+                    <div className="col-md-3 background square">     
                       <h5>Anuncie aqui!</h5>
                  
                         <img className="img-fluid" src={ImagemSeis} alt="Ads" />

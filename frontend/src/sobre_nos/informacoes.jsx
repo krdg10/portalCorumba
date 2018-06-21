@@ -7,7 +7,7 @@ export default props => (
 
 
      <div className="row">
-       <div className="col-sm-6 text-justify">
+       <div className="col-sm-6 text-justify fix3">
        <h1 className="page-header">Sobre Nós</h1>
         <p> Este portal de turismo de Corumbá-MS foi desenvolvido por alunos do curso de Sistemas de Informação da Universidade
 Federal do Mato Grosso do Sul, Campus Pantanal (UFMS-CPAN). Identificamos a necessidade de um site onde as informações
