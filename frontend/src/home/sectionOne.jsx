@@ -4,10 +4,11 @@ import Card from './cardHome'
 export default props => (
     <section className="bg-primary" id="about">
     <div className="container">
+      <h3 className="mx-auto text-center text-faded">Conheça a cidade de Corumbá</h3>
       <Card list={props.list}/>
       <div className="row">
         <div className="col-lg-8 mx-auto text-center">
-         
+           
         </div>
       </div>
     </div>

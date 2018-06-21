@@ -9,12 +9,12 @@ export default props => (
      <div className="row">
        <div className="col-sm-6 text-justify">
        <h1 className="page-header">Sobre Nós</h1>
-        <p> Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, 
-          eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. 
-          Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum. 
-          Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu 
-          vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. 
-        Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.</p>
+        <p> Este portal de turismo de Corumbá-MS foi desenvolvido por alunos do curso de Sistemas de Informação da Universidade
+Federal do Mato Grosso do Sul, Campus Pantanal (UFMS-CPAN). Identificamos a necessidade de um site onde as informações
+necessárias para o turistas estejam organizadas e disponibilizadas em apenas um site. O portal tem a intenção de divulgar e
+compartilhar informações para o público-alvo de uma maneira adequada e clara, e oferecer o serviço de divulgação para
+empresas da região. O site foi desenvolvido no Laboratório de Desenvolvimento de Software do Pantanal (LADESP), que
+está localizado na UFMS-CPAN. Os alunos responsáveis são Maria Luiza Mazó, Kelvin Rodrigues, Thiago Pires e José Luis Barboza.</p>
        </div>
 
         

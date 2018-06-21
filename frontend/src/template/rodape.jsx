@@ -39,9 +39,9 @@ import React from 'react'
 
       <div className="col-md-4">
         <ul className="nav d-flex justify-content-md-start">
-        <li className="item-rede-social"><a href="a" className="fa fa-twitter" alt="twitter"></a></li>
-              <li className=" item-rede-social"><a href="a" className="fa fa-facebook" alt="facebook" ></a></li>
-              <li className=" item-rede-social"><a href="a" className="fa fa-instagram"alt="instagram" ></a></li>
+        <li className="item-rede-social"><a href="https://twitter.com/CorumbaPortal" className="fa fa-twitter" alt="twitter"></a></li>
+              <li className=" item-rede-social"><a href="https://www.facebook.com/Portal-Turismo-Corumba-192325484939619/" className="fa fa-facebook" alt="facebook" ></a></li>
+              <li className=" item-rede-social"><a href="https://www.instagram.com/ptrcba/?hl=pt-br" className="fa fa-instagram"alt="instagram" ></a></li>
         </ul>
       </div>
       

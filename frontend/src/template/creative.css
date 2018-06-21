@@ -62,8 +62,12 @@ h6 {
   margin-top: 40px;
 }
 
+.fixcolor > a:hover{
+   background-color: rgba(107, 142, 35, 0.9) !important;
+}
+
 .bg-primary {
-  background-color: #556B2F !important;
+  background-color: rgba(85, 107, 47, 0.9)!important;
   height: 50%;
 }
 
@@ -79,6 +83,7 @@ h6 {
 section {
   padding: 8rem 0;
 }
+
 
 .section-heading {
   margin-top: 0;
@@ -262,7 +267,7 @@ header.masthead p {
         text-align: center;
         opacity: 0;
         color: #fff;
-        background: rgb(107, 142, 35);
+        background: rgba(107, 142, 35);
         -webkit-transition: all 0.2s;
         -moz-transition: all 0.2s;
         transition: all 0.2s;
@@ -365,11 +370,6 @@ header.masthead p {
 
 #imagem_comentario{
   width:60px !important;
-}
-
-.card {
-  width: 100% !important;
-  border: none !important;
 }
 
 .display {
@@ -485,10 +485,41 @@ header.masthead p {
     height: 200px;
   }
 
+  .img-thumbnail-1{
+    margin-top: 20px;
+    width:100%;
+    border: none !important;
+    height: 200px;
+  }
+
+  .card {
+    width: 100% !important;
+    border: none !important;
+  }
+  
   .card-body{
     text-align: center;
     padding: 0px 0px 0px 0px;
-    background-color: rgba(85, 107, 47, 0.3) !important;
+  }
+
+  .card-1 {
+    width: 100% !important;
+    border: none !important;
+    
+  }
+
+  .rounded{
+    border-radius: 25px;
+  }
+  
+  .card-body-1{
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    background-color: rgba(85, 107, 47, 0.9) !important;
+  }
+
+  .card-text-1, .card-title-1 {
+    color: white;
   }
 
   .descrip{

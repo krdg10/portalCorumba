@@ -8,7 +8,7 @@ export default props => (
             <a role="button" className="btn btn-outline-dark dropdown-toggle" href=" " data-toggle="dropdown">
                 Lazer
             </a>
-            <div className="dropdown-menu">
+            <div className="dropdown-menu fixcolor">
                 <a className="dropdown-item" href="#/lazer">Principais</a>
                 <a className="dropdown-item" href="#/passeio">Passeios</a>
                 <a className="dropdown-item" href="#/noite">Noite</a>
