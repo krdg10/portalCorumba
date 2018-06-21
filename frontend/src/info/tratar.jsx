@@ -21,12 +21,8 @@ export default props => {
                         <h3 className="descrip"><strong>{post.name}</strong></h3>
                         <p className="text-justify"> 
                             <strong>Descrição:</strong> {post.description} <br />
-                            <strong>Rua:</strong> {post.rua} <br />
-                            <strong>Bairro:</strong> {post.bairro}  <br />
-                            <strong>Número:</strong> {post.numero} <br />
-                            <strong>CEP:</strong> {post.cep} <br />
-                            <strong>Telefone:</strong> {post.telefone} <br />
-                            <strong>Email:</strong> {post.email} <br /> 
+                            <strong>Localização:</strong> {post.rua}, {post.numero}, {post.bairro}<br />
+                            <strong>Contato:</strong> {post.telefone}, {post.email} <br />
                         </p>
                             
            
