@@ -476,13 +476,16 @@ header.masthead p {
     height: 250px;
     float: left;
     padding-top: 70px;
+    margin-top: -13px;
     margin-left: 150px;
+    border-radius: 25px;
   }
 
   .img-thumbnail{
     width:100%;
     border: none !important;
     height: 200px;
+    border-radius: 25px;
   }
 
   .img-thumbnail-1{
@@ -490,6 +493,8 @@ header.masthead p {
     width:100%;
     border: none !important;
     height: 200px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
   }
 
   .card {
@@ -507,31 +512,38 @@ header.masthead p {
     border: none !important;
     
   }
-
-  .rounded{
-    border-radius: 25px;
-  }
   
   .card-body-1{
     text-align: center;
     padding: 10px 0px 0px 0px;
     background-color: rgba(85, 107, 47, 0.9) !important;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
   }
 
   .card-text-1, .card-title-1 {
     color: white;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
   }
 
   .descrip{
-    display: inline;
+   margin-top: 20px;
   }
+
+  .border{
+    border: 3px solid rgba(85, 107, 47, 0.3) !important;
+    width: auto;
+    margin-top: 5px;
+  }
+  
   
   .histimg{
     margin-top: 10px;
     margin-bottom: 15px;
     width: 607px;
     height: 313px;
-    max-width: 100%;
+   
   
   }
   .histicon{ 
@@ -539,21 +551,37 @@ header.masthead p {
     padding-top: 500px;
   }
   
-  .square{
-    border: 1px solid red;
-    margin-top: 100px;
-    background-color: rgba(107, 142, 35, 0.3);
-    width: 100%;
+  #background{
+    background-image: url('../../public/img/beck.jpg');
+    background-size: 100%;
   }
+
+  .square{
+    margin-top: 100px;
+    padding-bottom: 20px;
+    width: 100%;
+    border-radius: 25px;
+  } /*   background-color: rgba(107, 142, 35, 0.1);*/
   
   .square > h5{
+    padding-top: 10px;
     text-align: center;
+    color: white;
   }
 
   .squarehist{
-    margin-top: 300px;
-    height: 700px;
-    border: 1px solid red;
+    background-color: rgba(107, 142, 35, 0.1);
+    height: 800px;
+    padding-bottom: 20px;
+    width: 100%;
+    border-radius: 25px;
+   
+  }
+
+  .squarehist>h5{
+    padding-top: 10px;
+    text-align: center;
+    color: white;
   }
   
   .figure-caption{
@@ -561,7 +589,6 @@ header.masthead p {
     margin-bottom: 20px;
   }
   
-  .media-body{
-    border: 10px solid red;
-    width: auto;
+  .fix2{
+    margin-left: 140px;
   }

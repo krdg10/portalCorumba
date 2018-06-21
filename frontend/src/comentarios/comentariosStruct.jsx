@@ -6,19 +6,15 @@ export default props => {
         return list.map(post => {
             const teste = new Date(post.createdAt)
             return (
-                <tr key={post._id}>
-                    <td>
-                     
+                <div key={post._id}>
                     <div className="media border p-3">
                         <img src={Imagem} alt="John Doe" className="mr-3 mt-3 rounded-circle" id="imagem_comentario" />
                         <div className="media-body text-left">
-                            <h4>{post.name} <small><i>Postado em {("0"+ teste.getDate()).slice(-2)+'/'+("0"+(teste.getMonth()+1)).slice(-2)+'/'+teste.getFullYear()} - {("0"+ teste.getHours()).slice(-2)+':'+ ("0"+ teste.getMinutes()).slice(-2)}</i></small></h4>
+                            <h4>{post.name} <small><i>~ Postado em {("0"+ teste.getDate()).slice(-2)+'/'+("0"+(teste.getMonth()+1)).slice(-2)+'/'+teste.getFullYear()} - {("0"+ teste.getHours()).slice(-2)+':'+ ("0"+ teste.getMinutes()).slice(-2)}</i></small></h4>
                             <p>{post.description}</p>
-                        
                         </div>
-                    </div>
-                    </td>
-                </tr>
+                    </div>    
+                </div>
             )
         })
     }

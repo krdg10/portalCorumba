@@ -7,6 +7,7 @@ import Img5 from '../../public/img/hist5.png'
 import Img6 from '../../public/img/hist6.png'
 import Img7 from '../../public/img/hist7.png'
 import Img8 from '../../public/img/hist8.png'
+import ImagemSeis from '../../public/img/portfolio/thumbnails/6.jpg'
 
 
 export default props => {
@@ -34,8 +35,8 @@ export default props => {
                         o território contra as invasões espanholas. Construiram em 1775 o Forte Coimbra e fundoram em 21 de setembro de 1778 às margens do rio Paraguai o arraial de Nossa Senhora da Conceição de Albuquerque, povoado que surgiu como destacamento 
                         militar e se estabeleceu a princípio na ponta do Ladário. 
 </p>        
-                      <figure className="figure">
-                         <img src={Img1} alt="Corumbá" className="histimg mx-auto d-block" />
+                      <figure className="figure fix2">
+                         <img src={Img1} alt="Corumbá" className="histimg" />
                              <figcaption className="figure-caption">Corumbá - Praça de Sª Thereza, atual Praça da Independência.
                               Uma das mais antigas imagens do Colégio Salesiano de Santa Teresa.
                               O espaço da praça principal ainda não era delimitado, misturando-se com a atual rua 15 de Novembro, ao lado direito. Esta foto é de 1885 seculo 19. Não se sabe o autor.
@@ -47,8 +48,8 @@ export default props => {
                      o porto de Corumbá com sua posição geográfica privilegiada, tornou-se um importante centro econômico. 
                       </p>
             
-                      <figure className="figure">
-                        <img src={Img2} alt="Corumbá" className="histimg mx-auto d-block" />
+                      <figure className="figure fix2">
+                        <img src={Img2} alt="Corumbá" className="histimg" />
                           <figcaption className="figure-caption">'Reparem no tamanho dos navios que navegavam pelo Rio Paraguai.
                              Ao redor, chalanas que faziam desembarque de cargas e passageiros.
                             Imaginem como era o Porto Geral nesse tempo.' - Acervo da Denise Zinézi Duque
@@ -60,8 +61,8 @@ export default props => {
                     batalhas do conflito.Durante a ocupação a navegação pelo rio Paraguai foi interrompida o que desarticulou o comércio local. A cidade foi
                      destruída, abandonada a miséria, suas casas e depósitos foram saqueados e a população diminuída sofreu privações. </p>
 
-                     <figure className="figure">
-                      <img src={Img3} alt="Corumbá" className="histimg mx-auto d-block" />
+                     <figure className="figure fix2">
+                      <img src={Img3} alt="Corumbá" className="histimg" />
                          <figcaption className="figure-caption">Estamos na rua Delamare, entre a Antonio João e Antonio Maria, em frente a 
                          Praça da Republica. Foi nesse local, no dia 13 de Junho de 1867, que o Tenente Coronel Antonio Maria Coelho e sua 
                          tropa tomaram das mãos dos paraguaios o domínio das terras corumbaenses. O Grupo escolar (ILA) (predio na esquina a direita) estava 
@@ -81,8 +82,8 @@ export default props => {
                         América Latina até 1930.
                     </p>
 
-                    <figure className="figure">
-                         <img src={Img4} alt="Corumbá" className="histimg mx-auto d-block" />
+                    <figure className="figure fix2">
+                         <img src={Img4} alt="Corumbá" className="histimg" />
                             <figcaption className="figure-caption">Porto da alfandega, anos 30
                             Foto: Estélio da Cunha.
 
@@ -107,8 +108,8 @@ export default props => {
 
                     </p>
 
-                    <figure className="figure">
-                         <img src={Img5} alt="Corumbá" className="histimg mx-auto d-block" />
+                    <figure className="figure fix2">
+                         <img src={Img5} alt="Corumbá" className="histimg" />
                              <figcaption className="figure-caption">
                              </figcaption>Postes central, veículo de tração animal, pés de flamboyant e transeuntes vestidos moda da época, década de 20.
                             Estamos na Rua Frei Mariano. Lá atrás, o antigo muro da Praça da Independência
@@ -131,11 +132,12 @@ export default props => {
 
                     </p>
 
-                    <figure className="figure">
-                         <img src={Img6} alt="Corumbá" className="histimg mx-auto d-block" />
+                    <figure className="figure fix2">
+                         <img src={Img6} alt="Corumbá" className="histimg" />
                             <figcaption className="figure-caption">
-                            </figcaption>Foto de 1959, onde podemos ver bem a rua Frei Mariano, e a esquina da Delamare, 
+                            Foto de 1959, onde podemos ver bem a rua Frei Mariano, e a esquina da Delamare, 
                             só fundo, pantanal e céu se misturam.
+                            </figcaption>
                     </figure>
 
                     <p>Em 1977 com a criação do estado de Mato Grosso do Sul Campo Grande se tornou o centro,
@@ -145,13 +147,14 @@ export default props => {
 
                     </p>
 
-                   <figure className="figure">
-                       <img src={Img7} alt="Corumbá" className="histimg mx-auto d-block" />
+                   <figure className="figure fix2">
+                       <img src={Img7} alt="Corumbá" className="histimg " />
                           <figcaption className="figure-caption">
-                          </figcaption>'Essa foto foi tirada do grupo Amigos de Corumbá. 
+                          'Essa foto foi tirada do grupo Amigos de Corumbá. 
                           - Estamos em 1977, e o Rio Paraguai estava passando por uma 
                           rigorosa cheia, reparem que  a superfície do outro lado do rio 
                           está encoberta.
+                          </figcaption>
                    </figure>
 
                     <p>Nos fins da década de 70 começou a ser desenvolvido muito artesanalmente
@@ -161,8 +164,8 @@ export default props => {
                       aproveitar a principal mercadoria que possui: a natureza. 
                     </p>
                     
-                   <figure className="figure">
-                      <img src={Img8} alt="Corumbá" className="histimg mx-auto d-block" />
+                   <figure className="figure fix2">
+                      <img src={Img8} alt="Corumbá" className="histimg" />
                         <figcaption className="figure-caption">
                        </figcaption>
                    </figure>
@@ -170,22 +173,28 @@ export default props => {
                    <p> Corumbá é uma cidade de belezas únicas e povo receptivo, venha conhecer as belezas do pantanal e desfrutar de dias inesqueciveis na cidade branca.  </p>
             
             </div>
-                 <div className="col-md-3 squarehist">
-                   <h5>Navegue pelo site</h5>
-                   <a className="histicon fas fa-4x fa-bed mb-3 sr-icons" href="#/hospedagem"><h5>Hospedagem</h5></a>
-                </div>
+                  <div id="" className="col-md-3 squarehist">     
+                      <h5>Anuncie aqui!</h5>
+            
+                        <img className="img-fluid" src={ImagemSeis} alt="Ads" />
+                        <img className="img-fluid" src={ImagemSeis} alt="Ads" />
+                        <img className="img-fluid" src={ImagemSeis} alt="Ads" />
+                        <img className="img-fluid" src={ImagemSeis} alt="Ads" />
+                        
+                    </div>
             </div>
         </div>
 )
 }
         
-/*<table className='table' id="historia">
-<thead>
-    <tr>
-        <th>Publicações</th>
-    </tr>
-</thead>
-<tbody>
-    {renderRows()}
-</tbody>
-</table>*/
+/*
+ <div id="background" className="col-md-3 squarehist">     
+                      <h5>Anuncie aqui!</h5>
+            
+                        <img className="img-fluid" src={ImagemSeis} alt="Ads" />
+                        <img className="img-fluid" src={ImagemSeis} alt="Ads" />
+                        <img className="img-fluid" src={ImagemSeis} alt="Ads" />
+                        <img className="img-fluid" src={ImagemSeis} alt="Ads" />
+                        
+                    </div>
+ */
