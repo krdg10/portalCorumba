@@ -25,6 +25,7 @@ import SobreNos from '../sobre_nos/sobre_nos'
 import Erro from '../error/error'
 import Admin from '../admin/adicionar'
 import Admin_exclude from '../admin/excluir'
+import Servicos from '../servicos/servicos'
 //import Login from '../admin/tela_login'
 //import Callback from '../admin/Callback'
 
@@ -39,32 +40,22 @@ export default props =>(
         <Route path='/hotel' component={Hotel} />
         <Route path='/pousada' component={Pousada} />
         <Route path='/hostel' component={Hostel} />
-        <Route path='/teste' component={Teste} />
-        <Route path='/hotel/:id' component={Detail} />
-        <Route path='/teste/:id' component={Detail} />
+        <Route path='/detail' component={Detail} />
+        <Route path='/detail/:id/:tipo' component={Detail} />
         <Route path='/lazer' component={Lazer} />
-        <Route path='/lazer/:id' component={Detail} />
-        <Route path='/hostel/:id' component={Detail} />
-        <Route path='/pousada/:id' component={Detail} />
         <Route path='/noite' component={Noite} />
-        <Route path='/noite/:id' component={Detail} />
-        <Route path='/alimentacao/:id' component={Detail} />
         <Route path='/bar' component={Bar} />
-        <Route path='/bar/:id' component={Detail} />
         <Route path='/restaurante' component={Restaurante} />
         <Route path='/lanchonete' component={Lanchonente} />
-        <Route path='/lanchonete/:id' component={Detail} />
-        <Route path='/restaurante/:id' component={Detail} />
         <Route path='/pontos_turisticos' component={PontosTuristicos} />
-        <Route path='/pontos_turisticos/:id' component={Detail} />
         <Route path='/passeio' component={Passeio} />
         <Route path='/passeio/:id' component={Detail} />
         <Route path='/evento_turistico' component={EventoTuristico} />
-        <Route path='/evento_turistico/:id' component={Detail} />
         <Route path='/sobre_nos' component={SobreNos} />
         <Route path='/error' component={Erro} />
         <Route path='/admin' component={Admin}   />
         <Route path='/admin_remove' component={Admin_exclude}  />
+        <Route path='/servicos' component={Servicos}  />
         
 
         <Redirect from='*' to='/error'/>
@@ -73,3 +64,45 @@ export default props =>(
 
 //<Route path='/login' component={Login}/>
 //     <Route path='/callback' component={Callback} /> colocar la dentro dps
+/* anterior
+<Router history={hashHistory}>
+<Route path='/' component={Home} />
+<Route path='/home' component={Home}/>
+<Route path='/historia' component={Historia}/>
+<Route path='/hospedagem' component={Hospedagem} />
+<Route path='/alimentacao' component={Alimentacao} />
+<Route path='/onde_ir' component={Onde_Ir} />
+<Route path='/hotel' component={Hotel} />
+<Route path='/pousada' component={Pousada} />
+<Route path='/hostel' component={Hostel} />
+<Route path='/detail' component={Detail} />
+<Route path='/teste' component={Teste} />
+<Route path='/detail/:id/:tipo' component={Detail} />
+<Route path='/teste/:id' component={Detail} />
+<Route path='/lazer' component={Lazer} />
+<Route path='/lazer/:id/:tipo' component={Detail} />
+<Route path='/hostel/:id/:tipo' component={Detail} />
+<Route path='/pousada/:id/:tipo' component={Detail} />
+<Route path='/noite' component={Noite} />
+<Route path='/noite/:id/:tipo' component={Detail} />
+<Route path='/alimentacao/:id' component={Detail} />
+<Route path='/bar' component={Bar} />
+<Route path='/bar/:id' component={Detail} />
+<Route path='/restaurante' component={Restaurante} />
+<Route path='/lanchonete' component={Lanchonente} />
+<Route path='/lanchonete/:id' component={Detail} />
+<Route path='/restaurante/:id' component={Detail} />
+<Route path='/pontos_turisticos' component={PontosTuristicos} />
+<Route path='/pontos_turisticos/:id' component={Detail} />
+<Route path='/passeio' component={Passeio} />
+<Route path='/passeio/:id' component={Detail} />
+<Route path='/evento_turistico' component={EventoTuristico} />
+<Route path='/evento_turistico/:id' component={Detail} />
+<Route path='/sobre_nos' component={SobreNos} />
+<Route path='/error' component={Erro} />
+<Route path='/admin' component={Admin}   />
+<Route path='/admin_remove' component={Admin_exclude}  />
+
+
+<Redirect from='*' to='/error'/>
+</Router> */ 

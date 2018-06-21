@@ -544,7 +544,6 @@ header.masthead p {
     width: 607px;
     height: 313px;
    
-  
   }
   .histicon{ 
     padding-left: 30px;
@@ -591,4 +590,8 @@ header.masthead p {
   
   .fix2{
     margin-left: 140px;
+  }
+
+  .fix3{
+    margin-bottom: 150px;
   }

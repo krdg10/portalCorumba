@@ -22,6 +22,9 @@ export default props => (
           <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="#/onde_ir">Onde ir</a>
           </li>
+          <li className="nav-item">
+            <a className="nav-link js-scroll-trigger" href="#/servicos">Serviços</a>
+          </li>
          
         </ul>
       </div>

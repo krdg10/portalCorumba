@@ -11,14 +11,7 @@ import ImagemSeis from '../../public/img/portfolio/thumbnails/6.jpg'
 
 
 export default props => {
-    const renderRows = () =>{
-        const list = props.list || []
-        return list.map(post => (
-            <tr key={post._id}>
-                <td>{post.description}</td>
-            </tr>
-        ))
-    }
+   
     return (
         
        <div className="container" id="historia">
@@ -26,7 +19,7 @@ export default props => {
                 <div className="col-md-9 text-justify">
                     <h2>História de Corumbá</h2>
                         <hr className="coment" />
-                     {renderRows()}
+                    
 
                     <p>A área do atual município de Corumbá foi explorada pela primeira vez por volta de 1524 pelo português Aleixo Garcia, que ali chegou em busca de ouro. Com o nome de origem tupi-guarani Curupah – que significa “lugar distante” – e,
                          depois de ter outras denominações ao longo de sua história, 
@@ -170,7 +163,7 @@ export default props => {
                        </figcaption>
                    </figure>
 
-                   <p> Corumbá é uma cidade de belezas únicas e povo receptivo, venha conhecer as belezas do pantanal e desfrutar de dias inesqueciveis na cidade branca.  </p>
+                   <p className="fix3"> Corumbá é uma cidade de belezas únicas e povo receptivo, venha conhecer as belezas do pantanal e desfrutar de dias inesqueciveis na cidade branca.  </p>
             
             </div>
                   <div id="" className="col-md-3 squarehist">     
