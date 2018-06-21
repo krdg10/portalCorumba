@@ -10,10 +10,11 @@ export default props => {
         
         return list.map(post => (
            
-                <span key={post._id} className="display">
-                <div className="card" >
+            <div className="col-md-4" key={post._id}>
+                    
+            <div  className="card " >
                     <Link to={`/${post.tipo}/${post._id}`}>
-                       <img className="card-img-top img-thumbnail img-fluid" 
+                       <img className="img-thumbnail img-fluid" 
                        src={img+post._id+'.png'} alt="Card image" />
                     </Link>
                     <div className="card-body">
@@ -26,7 +27,8 @@ export default props => {
 
                     </div>
                 </div>
-                </span>
+                </div>
+            
            
         ))
     }
@@ -34,7 +36,7 @@ export default props => {
 
     return (
        
-        <div>
+        <div className="container row">
             <select id="tipo" className='form-control' onChange={props.handleChangeTipo} 
             onClick={props.refresh}>
                     <option value="">Todos</option>

@@ -14,14 +14,14 @@ export default props => {
                 <div key={post._id} className="col-md-4">
                     
                     <div className="card-1" >
-                        <Link to={`/${post.tipo}/${post._id}/${post.tipo}`}>
-                        <img className=" img-thumbnail-1 img-fluid" src={img+post._id+'.jpg'} alt="Card image" />
+                        <Link to={`/detail/${post._id}/${post.tipo}`}>
+                        <img className=" img-thumbnail-1 img-fluid" src={img+post._id+'.png'} alt="Card image" />
                         </Link>
                         <div className="card-body-1">
-                            <Link to={`/${post.tipo}/${post._id}/${post.tipo}`}>
+                            <Link to={`/detail/${post._id}/${post.tipo}`}>
                             <h4 className="card-title-1">{post.name}</h4>
                             </Link>
-                            <p className="card-text-1 text-justify">{post.description}</p>
+                            <p className="card-text-1 text-justify"></p>
                         
                         </div>
                     </div>

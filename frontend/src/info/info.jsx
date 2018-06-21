@@ -6,6 +6,9 @@ import OndeIr from '../onde_ir/botoes_onde_ir'
 import Alimentacao from '../alimentacao/botoes'
 import Tratar from './tratar'
 import Comentario from '../comentarios/comentarios'
+import Error from '../error/error'
+import Tratar_Carnaval from './tratar_carnaval'
+import Taxi from './tratar_taxi'
 const URL = 'http://localhost:3003/api/posts'
 
 export default class Detail extends Component {
@@ -50,13 +53,23 @@ export default class Detail extends Component {
         </div>
       );
     }
-    else if(this.props.params.tipo=='noite' || this.props.params.tipo=='passeio' || this.props.params.tipo=='pontos_turisticos' || this.props.params.tipo=='evento_turistico'){
+    else if(this.props.params.tipo=='noite' || this.props.params.tipo=='passeio' || this.props.params.tipo=='pontos_turisticos'){
       return (
         <div className="margin-left">
          <br/> 
           <OndeIr />
           <br/> 
           <Tratar list={this.state.list} />
+          <Comentario tipocomentario={this.props.params.id} />
+        </div>
+      );
+    }
+    else if(this.props.params.id=='5b2b93785b68930771f5b2b0'){
+      return (
+        <div className="margin-left">
+         <br/> 
+  
+          <Taxi list={this.state.list} />
           <Comentario tipocomentario={this.props.params.id} />
         </div>
       );
@@ -70,6 +83,24 @@ export default class Detail extends Component {
           <Comentario tipocomentario={this.props.params.id} />
         </div>
       );
+    }
+    else if(this.props.params.tipo=='evento_turistico'){
+      return (
+        <div className="publicacoes">
+        <br/> 
+          <OndeIr />
+          <br/> 
+          <left><Tratar_Carnaval list={this.state.list} /></left>
+          <left> <Comentario tipocomentario={this.props.params.id} /></left>
+        </div>
+      );
+    }
+
+    else{
+      <div >
+        <Error />
+      </div>
+
     }
     return null;
   }
