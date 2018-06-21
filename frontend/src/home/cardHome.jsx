@@ -21,7 +21,7 @@ export default props => {
                             <Link to={`/${post.tipo}/${post._id}`}>
                             <h4 className="card-title">{post.name}</h4>
                             </Link>
-                            <p className="card-text"></p>
+                            <p className="card-text">{post.description}</p>
                         
                         </div>
                     </div>
@@ -40,34 +40,3 @@ export default props => {
         </div>
     )
 }
-
-/*
-export default props => {
-    const renderRows = () =>{
-        const list = props.list || []
-        return list.map(post => (
-           
-                <span key={post._id} className="display">
-                <div className="card" >
-                    <img className="card-img-top" src={Imagem} alt="Card image" />
-                    <div className="card-body">
-                        <h4 className="card-title">{post.name}</h4>
-                        <p className="card-text">{post.description}</p>
-                        <a href="#" className="btn btn-primary">See Profile</a>
-                    </div>
-                </div>
-                </span>
-           
-        ))
-    }
-
-    return (
-       
-        <div>
-           {renderRows()}
-          
-        </div>
-    )
-}
-
-anterior  */
