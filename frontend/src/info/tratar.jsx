@@ -8,12 +8,12 @@ export default props => {
         const list = props.list || []
         return list.map(post => (
             
-             <div className="container">
+             <div className="container" key={post._id}>
                  <div className="row">
                  
                   <div className="col-md-5 tratar">
-                    <div key={post._id} id="texto-info" className="text-justify">
-                    <img className="thumb img-fluid" src={img+post._id+'.jpg'} alt="Foto"/> 
+                    <div id="texto-info" className="text-justify">
+                    <img className="thumb img-fluid" src={img+post._id+'.png'} alt="Foto"/> 
                     </div>
                   </div>
                 
