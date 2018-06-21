@@ -8,18 +8,18 @@ export default props => {
         const list = props.list || []
         return list.map(post => (
             
-             <div className="container" key={post._id}>
+             <div className="container" key={post._id} >
                  <div className="row">
                  
                   <div className="col-md-5 tratar">
                     <div id="texto-info" className="text-justify">
-                    <img className="thumb img-fluid" src={img+post._id+'.png'} alt="Foto"/> 
+                    <img className="thumb img-fluid" src={img+post._id+'.jpg'} alt="Foto"/> 
                     </div>
                   </div>
                 
                     <div className="col-md-4 tratar mx-auto d-block">
-                        <h3 className="descrip"><strong>{post.name}</strong></h3><br /><br />
-                        <p className="descrip"> 
+                        <h3 className="descrip"><strong>{post.name}</strong></h3>
+                        <p className="text-justify"> 
                             <strong>Descrição:</strong> {post.description} <br />
                             <strong>Rua:</strong> {post.rua} <br />
                             <strong>Bairro:</strong> {post.bairro}  <br />
@@ -33,12 +33,14 @@ export default props => {
            
                    </div>
                  
-                    <div className="col-md-3 square">
+                    <div id="background" className="col-md-3 square">     
                       <h5>Anuncie aqui!</h5>
-                        <img className="img-fluid" src={ImagemSeis} alt="" />
-                        <img className="img-fluid" src={ImagemSeis} alt="" />
-                        <img className="img-fluid" src={ImagemSeis} alt="" />
-                        <img className="img-fluid" src={ImagemSeis} alt="" />
+                 
+                        <img className="img-fluid" src={ImagemSeis} alt="Ads" />
+                        <img className="img-fluid" src={ImagemSeis} alt="Ads" />
+                        <img className="img-fluid" src={ImagemSeis} alt="Ads" />
+                        <img className="img-fluid" src={ImagemSeis} alt="Ads" />
+                      
                     </div>
                   </div>  
 
@@ -46,7 +48,6 @@ export default props => {
         ))
     }
     
-
     return (
        
     
