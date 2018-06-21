@@ -11,38 +11,37 @@ export default props => {
              <div className="container">
                  <div className="row">
                  
-                  <div className="col-md-9 tratar mx-auto d-block">
+                  <div className="col-md-5 tratar">
                     <div key={post._id} id="texto-info" className="text-justify">
-                    <img className="thumb img-responsive" src={img+post._id+'.png'} alt="Foto"/> 
-                        
+                    <img className="thumb img-fluid" src={img+post._id+'.jpg'} alt="Foto"/> 
+                    </div>
+                  </div>
+                
+                    <div className="col-md-4 tratar mx-auto d-block">
                         <h3 className="descrip"><strong>{post.name}</strong></h3><br /><br />
                         <p className="descrip"> 
-                            Descrição: {post.description} <br />
-                            Rua: {post.rua} <br />
-                            Bairro: {post.bairro}  <br />
-                            Número: {post.numero} <br />
-                            CEP: {post.cep} <br />
-                            Telefone: {post.telefone} <br />
-                            Email: {post.email} <br />
+                            <strong>Descrição:</strong> {post.description} <br />
+                            <strong>Rua:</strong> {post.rua} <br />
+                            <strong>Bairro:</strong> {post.bairro}  <br />
+                            <strong>Número:</strong> {post.numero} <br />
+                            <strong>CEP:</strong> {post.cep} <br />
+                            <strong>Telefone:</strong> {post.telefone} <br />
+                            <strong>Email:</strong> {post.email} <br />
                             Tipo: {post.tipo} <br /> 
-                            
-
-                         </p>
+                        </p>
                             {post._id} <br /> 
            
                    </div>
-                   </div>
-
+                 
                     <div className="col-md-3 square">
                       <h5>Anuncie aqui!</h5>
                         <img className="img-fluid" src={ImagemSeis} alt="" />
                         <img className="img-fluid" src={ImagemSeis} alt="" />
                         <img className="img-fluid" src={ImagemSeis} alt="" />
                         <img className="img-fluid" src={ImagemSeis} alt="" />
-                     
-                </div>
+                    </div>
+                  </div>  
 
-                </div>  
             </div>
         ))
     }

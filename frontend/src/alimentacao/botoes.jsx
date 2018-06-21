@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react'           
 
 export default props => (
     <div class="botoes_alimentacao" className="text-center">
