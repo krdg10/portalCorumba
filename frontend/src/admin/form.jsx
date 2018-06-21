@@ -154,6 +154,17 @@ export default props => {
                             <input type="radio" className="form-check-input" name="homePremium" id="homePremium" value='true' onChange={props.handleChangeHomePremium}/>true
                             </label>
                         </div>
+                        <br/>
+                        Pesca: 
+                        <div className="form-check-inline">
+                            <label className="form-check-label">
+                            <input type="radio" className="form-check-input" name="pesca" id="pesca" value='false' onChange={props.handleChangePesca}/>false
+                            </label>
+                            <label className="form-check-label">
+                            <input type="radio" className="form-check-input" name="pesca" id="pesca" value='true' onChange={props.handleChangePesca}/>true
+                            </label>
+                        </div>
+                        
                     </div>
                 
                 </form>

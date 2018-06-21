@@ -26,6 +26,7 @@ import Erro from '../error/error'
 import Admin from '../admin/adicionar'
 import Admin_exclude from '../admin/excluir'
 import Servicos from '../servicos/servicos'
+import Pesca from '../pesca/pesca'
 //import Login from '../admin/tela_login'
 //import Callback from '../admin/Callback'
 
@@ -56,6 +57,7 @@ export default props =>(
         <Route path='/admin' component={Admin}   />
         <Route path='/admin_remove' component={Admin_exclude}  />
         <Route path='/servicos' component={Servicos}  />
+        <Route path='/pesca' component={Pesca}  />
         
 
         <Redirect from='*' to='/error'/>

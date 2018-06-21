@@ -13,6 +13,8 @@ export default props => (
                 <a className="dropdown-item" href="#/passeio">Passeios</a>
                 <a className="dropdown-item" href="#/noite">Noite</a>
                 <a className="dropdown-item" href="#/evento_turistico">Eventos Turisticos</a>
+                <a className="dropdown-item" href="#/bar">Bares</a>
+
              </div>
          
     </div>

@@ -13,7 +13,7 @@ export default class Admin extends Component {
         this.state = {description: '', tipo: '', name: '', rua: '', cep: '', 
         bairro: '', numero: '', email: '', telefone: '', 
         horario_funcionamento: '', hospedagemPremium: '', ondeIrPremium: '',
-        alimentacaoPremium: '', lazerPremium: '', homePremium: '', site: '', list: [] }
+        alimentacaoPremium: '', lazerPremium: '', homePremium: '', site: '', pesca: '', list: [] }
         
 
         this.handleChangeDescription = this.handleChangeDescription.bind(this)
@@ -32,7 +32,7 @@ export default class Admin extends Component {
         this.handleChangeLazerPremium = this.handleChangeLazerPremium.bind(this)
         this.handleChangeHomePremium = this.handleChangeHomePremium.bind(this)
         this.handleChangeSite = this.handleChangeSite.bind(this)
-
+        this.handleChangePesca = this.handleChangePesca.bind(this)
         this.handleAdd = this.handleAdd.bind(this)
         this.refresh()
        
@@ -56,6 +56,9 @@ export default class Admin extends Component {
     }
     handleChangeHomePremium(e){
         this.setState({...this.state, homePremium: e.target.value })
+    }
+    handleChangePesca(e){
+        this.setState({...this.state, pesca: e.target.value })
     }
     handleChangeDescription(e){
         this.setState({...this.state, description: e.target.value })
@@ -108,15 +111,15 @@ export default class Admin extends Component {
         const lazerPremium = this.state.lazerPremium
         const homePremium = this.state.homePremium
         const site = this.state.site
-        
+        const pesca = this.state.pesca
         axios.post(URL, {description, name, tipo, hospedagemPremium, rua, cep, bairro, numero, email, telefone,
-        horario_funcionamento, ondeIrPremium, alimentacaoPremium, lazerPremium, homePremium, site})
+        horario_funcionamento, ondeIrPremium, alimentacaoPremium, lazerPremium, homePremium, site, pesca})
             .then(resp => this.refresh())
             
     }
     refresh(){
         axios.get(`${URL}?sort=-createdAt`)
-            .then(resp => this.setState({...this.state, description: '', tipo: '', name: '', rua: '', cep: '', bairro: '', numero: '', email: '', telefone: '', horario_funcionamento: '', hospedagemPremium: '', ondeIrPremium: '', alimentacaoPremium: '', lazerPremium: '', homePremium: '', site: '', list: resp.data}))
+            .then(resp => this.setState({...this.state, description: '', tipo: '', name: '', rua: '', cep: '', bairro: '', numero: '', email: '', telefone: '', horario_funcionamento: '', hospedagemPremium: '', ondeIrPremium: '', alimentacaoPremium: '', lazerPremium: '', homePremium: '', site: '', pesca: '', list: resp.data}))
     }
 
    
@@ -140,6 +143,7 @@ export default class Admin extends Component {
                     telefone={this.state.telefone}
                     tipo={this.state.tipo}
                     site={this.state.site}
+                    pesca={this.state.pesca}
 
                     handleAdd={this.handleAdd}
                     handleChangeAlimentacaoPremium={this.handleChangeAlimentacaoPremium}
@@ -158,6 +162,7 @@ export default class Admin extends Component {
                     handleChangeTelefone={this.handleChangeTelefone}
                     handleChangeTipo={this.handleChangeTipo}
                     handleChangeSite={this.handleChangeSite}
+                    handleChangePesca={this.handleChangePesca}
                     />
              
            
