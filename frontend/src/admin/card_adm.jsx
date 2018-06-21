@@ -48,6 +48,7 @@ export default props => {
                     <option value="passeio">Passeio</option>
                     <option value="noite">Noite</option>
                     <option value="evento_turistico">Eventos Turísticos</option>
+                    <option value="servicos">Serviços</option>
                 </select>
                
            {renderRows()}
