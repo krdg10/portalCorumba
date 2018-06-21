@@ -13,7 +13,7 @@ export default props => {
 
                 <div className="col-md-4" key={post._id}>
                     
-                    <div  className="card " >
+                    <div  className="card  " >
                         <Link to={`/detail/${post._id}/${post.tipo}`}>
                         <img className=" img-thumbnail img-fluid" src={img+post._id+'.png'} alt="Card image" />
                         </Link>
@@ -21,7 +21,7 @@ export default props => {
                             <Link to={`/detail/${post._id}/${post.tipo}`}>
                             <h4 className="card-title ">{post.name}</h4>
                             </Link>
-                            <p className="card-text"></p>
+                            <p className="card-text">{post._id}</p>
                         
                         </div>
                     </div>

@@ -13,11 +13,11 @@ import React from 'react'
                       <span>Portal Turismo Corumbá</span>    
 
                       <li>
-                        <a href="#/sobre_nos">Sobre Nós</a>
+                        <a id="topo" href="#/sobre_nos">Sobre Nós</a>
                       </li>
                       
                       <li>
-                        <a href="#/sobre_nos">Contato</a>
+                        <a id="topo" href="#/sobre_nos">Contato</a>
                       </li>
                             
                   </ul>
@@ -28,22 +28,22 @@ import React from 'react'
                       <span>Mapa do Site</span>    
                       
                       <li>
-                        <a href="#/historia">História da Cidade</a>
+                        <a id="topo" href="#/historia">História da Cidade</a>
                       </li>
                       <li>
-                        <a href="#/hospedagem">Hospedagem</a>
+                        <a id="" href="#/hospedagem">Hospedagem</a>
                       </li>
                       <li>
-                        <a href="#/alimentacao">Alimentação</a>
+                        <a id="" href="#/alimentacao">Alimentação</a>
                       </li>
                       <li>
-                        <a href="#/onde_ir">Onde ir</a>
+                        <a id="" href="#/onde_ir">Onde ir</a>
                       </li>
                       <li>
-                        <a href="#/servicos">Serviços</a>
+                        <a id="" href="#/servicos">Serviços</a>
                       </li>
                       <li>
-                        <a href="#/pesca">Pesca</a>
+                        <a id="" href="#/pesca">Pesca</a>
                       </li>
 
                  </ul>

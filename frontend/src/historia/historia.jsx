@@ -28,7 +28,7 @@ export default class Historia extends Component {
 
     render() {
         return (
-            <div className='publicacoes'> 
+            <div id="historia" className='publicacoes'> 
             <left> <Publicacao list={this.state.list} /></left>
             </div>
         )

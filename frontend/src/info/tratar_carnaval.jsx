@@ -43,7 +43,7 @@ export default props => {
                 </div>
                 
            
-                <div className="col-md-3 background square">     
+                <div className="col-md-3 background squarehist">     
                       <h5>Anuncie aqui!</h5>
                         <img className="img-fluid" src={ImagemSeis} alt="Ads" />
                         <img className="img-fluid" src={ImagemSeis} alt="Ads" />
