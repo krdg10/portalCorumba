@@ -21,7 +21,7 @@ export default props => {
                             <Link to={`/detail/${post._id}/${post.tipo}`}>
                             <h4 className="card-title ">{post.name}</h4>
                             </Link>
-                            <p className="card-text">{post._id}</p>
+                            <p className="card-text"></p>
                         
                         </div>
                     </div>
