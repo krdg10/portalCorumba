@@ -21,7 +21,7 @@ export default props => {
                         <Link to={`/${post.tipo}/${post._id}`}>
                           <h4 className="card-title">{post.name}</h4>
                         </Link>
-                        <p className="card-text"></p>
+                        <p className="card-text">{post.extension}</p>
                         <IconButton style='primary' icon='plus' 
                         onClick={() => props.handleRemove(post)}></IconButton>
 

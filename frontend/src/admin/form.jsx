@@ -2,6 +2,7 @@ import React from 'react'
 import Grid from '../template/grid'
 import IconButton from '../template/iconButton'
 import { Router, Route, Link, hashHistory } from 'react-router'
+import  {sendImage}  from './product'
 
 export default props => {
 
@@ -14,7 +15,7 @@ export default props => {
             
             <div className="container">
                 
-                <form>
+                <form encType="multipart/form-data">
                 
                     <div className="form-group">
                         <input id='name' className='form-control'
@@ -164,6 +165,15 @@ export default props => {
                             <input type="radio" className="form-check-input" name="pesca" id="pesca" value='true' onChange={props.handleChangePesca}/>true
                             </label>
                         </div>
+                        <input 
+                            className="form-control" 
+                            id="image" 
+                            type="file" 
+                            name="image"
+                            onChange={ sendImage }
+                            onClick={props.handleChangeExtension}
+                        />
+                       
                         
                     </div>
                 
@@ -178,7 +188,3 @@ export default props => {
         </div>
     )
 }
-
-/*   <Grid cols ='12 3 2'>
-                <IconButton style='primary' icon='plus' onClick={props.handleAdd}></IconButton>
-            </Grid>*/

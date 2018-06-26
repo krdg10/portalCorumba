@@ -2,8 +2,8 @@ const restful = require('node-restful')
 const mongoose = restful.mongoose
 
 const postSchema = new mongoose.Schema({
-    description: {type: String, required: true},
-    tipo: {type: String, required: true},
+    description: {type: String},
+    tipo: {type: String},
     hospedagemPremium: {type: Boolean, default: false},
     name: {type: String},
     rua: {type: String},
@@ -19,6 +19,7 @@ const postSchema = new mongoose.Schema({
     homePremium: {type: Boolean},
     pesca: {type: Boolean},
     site: {type: String},
+    extension: {type: String},
     createdAt: { type: Date, default: Date.now }
 })
 
