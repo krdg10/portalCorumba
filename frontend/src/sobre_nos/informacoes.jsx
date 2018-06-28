@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Chat from './chatbot'
 export default props => (
     <section id="contact">
     
@@ -16,6 +16,9 @@ compartilhar informações para o público-alvo de uma maneira adequada e clara,
 empresas da região. O site foi desenvolvido no Laboratório de Desenvolvimento de Software do Pantanal (LADESP), que
 está localizado na UFMS-CPAN. Os alunos responsáveis são Maria Luiza Mazó, Kelvin Rodrigues, Thiago Pires e José Luis Barboza.</p>
        </div>
+       <div className="col-sm-6">
+        <Chat />
+      </div>
 
         
        <div className="col-sm-6">
