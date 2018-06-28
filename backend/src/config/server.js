@@ -19,7 +19,9 @@ var storage = multer.diskStorage({
     },
     filename: function (req, file, cb) {
         var ext = file.originalname.substr(file.originalname.lastIndexOf('.') + 1)
-      cb(null, file.fieldname + '-' + Date.now() + '.' + ext)
+        // cb(null, file.fieldname + '-' + Date.now() + '.' + ext)
+        // mudei isso aqui pra mudar como o nome é salvo. Ai a outra soluçao é o lance de salvar o id como tipo de uma imagem salva aqui num outro post e pesquisar por ela, ou entao mandar o objeto mas n sei como. ver isso dps
+        cb(null, file.originalname)
     }
   })
 
@@ -39,12 +41,14 @@ server.use('/assets', express.static('public'))
 var upload = multer({ storage: storage })
 
 
+//  server.post('/file/:id', upload.single('imagem'), function (req, res, next) { tava assim pra passar o id. Acessado por params.id
 server.post('/file', upload.single('imagem'), function (req, res, next) {
 
     /**
      * Salvar no banco de dados os dados do arquivo
      */
-    console.log(req.file)
+    console.log(req)
+
 
     
     /* req.file.path.substr(req.file.path.lastIndexOf('.') + 1)

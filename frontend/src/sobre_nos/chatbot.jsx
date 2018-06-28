@@ -1,9 +1,23 @@
 import React from 'react'
-import ChatBot from 'react-simple-chatbot';
+import ChatBot from 'react-simple-chatbot'
+import { ThemeProvider } from 'styled-components'
+
+const theme = {
+    background: '#f5f8fb',
+    fontFamily: 'Helvetica Neue',
+    headerBgColor: '#123203',
+    headerFontColor: '#261B03',
+    headerFontSize: '15px',
+    botBubbleColor: '#123203',
+    botFontColor: '#556B2F',
+    userBubbleColor: '#fff',
+    userFontColor: 'red',
+  };
+
 
 const Message = (props) => {
 
-    var response = 'Descupe, mas não há irei conseguir responder a sua pergunta'
+    var response = 'Desculpe, não consegui entender sua pergunta ):'
 
     var test1, test2, test3;
     // Qual seu nome
@@ -140,16 +154,20 @@ export default props => {
         },
         {
             id: '7',
-            message: 'Até a proxima, falou!',
+            message: 'Até mais meu parceiro!',
             end: true
         },
     ]
 
     return (
         <div id="chatbot">
+        <ThemeProvider theme={theme}>
             <ChatBot
+                headerTitle="Dúvidas"
+                placeholder="Fala aí meu consagrado!"
                 steps={ steps }
             />
+        </ThemeProvider>
         </div>
     )
 }

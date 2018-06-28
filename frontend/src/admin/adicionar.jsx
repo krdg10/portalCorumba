@@ -13,7 +13,8 @@ export default class Admin extends Component {
         bairro: '', numero: '', email: '', telefone: '', 
         horario_funcionamento: '', hospedagemPremium: '', ondeIrPremium: '',
         alimentacaoPremium: '', lazerPremium: '', homePremium: '', site: '', pesca: '', 
-        extension: '', id: '', list: [] }
+        imagemOne: '', imagemTwo: '', imagemThree: '', imagemFour: '',
+        imagemFive: '', id: '', list: [] }
         
 
         this.handleChangeDescription = this.handleChangeDescription.bind(this)
@@ -33,7 +34,11 @@ export default class Admin extends Component {
         this.handleChangeHomePremium = this.handleChangeHomePremium.bind(this)
         this.handleChangeSite = this.handleChangeSite.bind(this)
         this.handleChangePesca = this.handleChangePesca.bind(this)
-        this.handleChangeExtension = this.handleChangeExtension.bind(this)
+        this.handleChangeImagemOne = this.handleChangeImagemOne.bind(this)
+        this.handleChangeImagemTwo = this.handleChangeImagemTwo.bind(this)
+        this.handleChangeImagemThree = this.handleChangeImagemThree.bind(this)
+        this.handleChangeImagemFour = this.handleChangeImagemFour.bind(this)
+        this.handleChangeImagemFive = this.handleChangeImagemFive.bind(this)
         this.handleAdd = this.handleAdd.bind(this)
         this.sendImage = this.sendImage.bind(this)
         this.refresh()
@@ -92,8 +97,20 @@ export default class Admin extends Component {
     handleChangeSite(e){
         this.setState({...this.state, site: e.target.value })
     }
-    handleChangeExtension(e){
-        this.setState({...this.state, extension: e.target.value })
+    handleChangeImagemOne(e){
+        this.setState({...this.state, imagemOne: e.target.value })
+    }
+    handleChangeImagemTwo(e){
+        this.setState({...this.state, imagemTwo: e.target.value })
+    }
+    handleChangeImagemThree(e){
+        this.setState({...this.state, imagemThree: e.target.value })
+    }
+    handleChangeImagemFour(e){
+        this.setState({...this.state, imagemFour: e.target.value })
+    }
+    handleChangeImagemFive(e){
+        this.setState({...this.state, imagemFive: e.target.value })
     }
     /* this.state = {description: '', tipo: '', name: '', rua: '', cep: '', 
         bairro: '', numero: '', email: '', telefone: '', 
@@ -117,12 +134,17 @@ export default class Admin extends Component {
         const homePremium = this.state.homePremium
         const site = this.state.site
         const pesca = this.state.pesca
-        const extension = this.state.extension
+        const imagemOne = this.state.imagemOne
+        const imagemTwo = this.state.imagemTwo
+        const imagemThree = this.state.imagemThree
+        const imagemFour = this.state.imagemFour
+        const imagemFive = this.state.imagemFive
+
         axios.post(URL, {description, name, tipo, hospedagemPremium, rua, 
         cep, bairro, numero, email, telefone,
         horario_funcionamento, ondeIrPremium, alimentacaoPremium, lazerPremium,
-        homePremium, site, pesca, extension})
-            .then(resp => this.refresh(resp.data._id))
+        homePremium, site, pesca, imagemOne, imagemTwo, imagemThree, imagemFour, imagemFive})
+            .then(resp => this.refresh(resp.data))
        
             
     }
@@ -132,11 +154,12 @@ export default class Admin extends Component {
             cep: '', bairro: '', numero: '', email: '', 
             telefone: '', horario_funcionamento: '', hospedagemPremium: '', ondeIrPremium: '', 
             alimentacaoPremium: '', lazerPremium: '', homePremium: '', site: '', 
-            pesca: '', extension:'', list: resp.data})) 
+            pesca: '', imagemOne:'', imagemTwo:'', imagemThree:'', imagemFour:'', imagemFive:'', list: resp.data})) 
         this.state.id = help
         console.log(this.state.id)
     }
     sendImage(event) {
+        console.log(this.state.id)
         const URL = "http://localhost:3003/file"
         var bodyFormData = new FormData();
         bodyFormData.set('imagem', event.target.files[0]);
@@ -183,7 +206,11 @@ export default class Admin extends Component {
                     tipo={this.state.tipo}
                     site={this.state.site}
                     pesca={this.state.pesca}
-                    extension={this.state.extension}
+                    imagemOne={this.state.imagemOne}
+                    imagemTwo={this.state.imagemTwo}
+                    imagemThree={this.state.imagemThree}
+                    imagemFour={this.state.imagemFour}
+                    imagemFive={this.state.imagemFive}
                     id={this.state.id}
 
                     handleAdd={this.handleAdd}
@@ -204,7 +231,11 @@ export default class Admin extends Component {
                     handleChangeTipo={this.handleChangeTipo}
                     handleChangeSite={this.handleChangeSite}
                     handleChangePesca={this.handleChangePesca}
-                    handleChangeExtension={this.handleChangeExtension}
+                    handleChangeImagemOne={this.handleChangeImagemOne}
+                    handleChangeImagemTwo={this.handleChangeImagemTwo}
+                    handleChangeImagemThree={this.handleChangeImagemThree}
+                    handleChangeImagemFour={this.handleChangeImagemFour}
+                    handleChangeImagemFive={this.handleChangeImagemFive}
                     sendImage={this.sendImage}
                    
                     />

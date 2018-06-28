@@ -20,7 +20,16 @@ está localizado na UFMS-CPAN. Os alunos responsáveis são Maria Luiza Mazó, K
         <Chat />
       </div>
 
-        
+      
+  
+     </div>
+
+    
+   </div>
+    
+  </section>
+)
+/*   
        <div className="col-sm-6">
        <h1 className="page-header">Fale Conosco</h1>
          <form>
@@ -43,11 +52,4 @@ está localizado na UFMS-CPAN. Os alunos responsáveis são Maria Luiza Mazó, K
 
          </form>
        </div>
-  
-     </div>
-
-    
-   </div>
-    
-  </section>
-)
+       tava ali em cima*/

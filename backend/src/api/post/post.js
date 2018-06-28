@@ -19,7 +19,11 @@ const postSchema = new mongoose.Schema({
     homePremium: {type: Boolean},
     pesca: {type: Boolean},
     site: {type: String},
-    extension: {type: String},
+    imagemOne: {type: String},
+    imagemTwo: {type: String},
+    imagemThree: {type: String},
+    imagemFour: {type: String},
+    imagemFive: {type: String},
     createdAt: { type: Date, default: Date.now }
 })
 

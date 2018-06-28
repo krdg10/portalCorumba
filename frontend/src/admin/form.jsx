@@ -165,11 +165,43 @@ export default props => {
                         </div>
                         <input 
                             className="form-control" 
-                            id="image" 
+                            id="image1" 
                             type="file" 
-                            name="image"
+                            name="image1"
                             onChange={ props.sendImage }
-                            onClick={props.handleChangeExtension}
+                            onClick={props.handleChangeImagemOne}
+                        />
+                        <input 
+                            className="form-control" 
+                            id="image2" 
+                            type="file" 
+                            name="image2"
+                            onChange={ props.sendImage }
+                            onClick={props.handleChangeImagemTwo}
+                        />
+                        <input 
+                            className="form-control" 
+                            id="image3" 
+                            type="file" 
+                            name="image3"
+                            onChange={ props.sendImage }
+                            onClick={props.handleChangeImagemThree}
+                        />
+                        <input 
+                            className="form-control" 
+                            id="image4" 
+                            type="file" 
+                            name="image4"
+                            onChange={ props.sendImage }
+                            onClick={props.handleChangeImagemFour}
+                        />
+                        <input 
+                            className="form-control" 
+                            id="image5" 
+                            type="file" 
+                            name="image5"
+                            onChange={ props.sendImage }
+                            onClick={props.handleChangeImagemFive}
                         />
                        
                     

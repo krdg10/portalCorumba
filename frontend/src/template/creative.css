@@ -99,14 +99,14 @@ section {
 
 ::-moz-selection {
   color: #fff;
-  background: #123203;
+  background: #556B2F;
   text-shadow: none;
   font-family: 'Helvetica Neue', 'Open Sans', Arial, sans-serif;
 }
 
 ::selection {
   color: #fff;
-  background: #123203;
+  background: #556B2F;
   text-shadow: none;
 }
 
@@ -611,5 +611,17 @@ footer ul li{
    list-style: none;
 }
 
+.glfuN{
+  background: #123203 !important;
+}
+
+.fhAWVE {
+  background: #123203 !important;
+}
+            
+.fMcZCH{
+  background: #123203 !important;
+  color: white !important;
+}
             
                         
