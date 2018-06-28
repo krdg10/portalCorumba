@@ -27,13 +27,13 @@ const Message = (props) => {
         response = 'Neyruto!'
     }
     // Sobre o que é o portal turismo Corumbá?
-    test1 = new RegExp('^(?=.*sobre)(?=.*portal).*$|^(?=.*sobre)(?=.*corumba).*$', 'im')
+    test1 = new RegExp('^(?=.*sobre)(?=.*portal|turismo).*$|^(?=.*sobre)(?=.*corumba|corumbá|Corumba|Corumbá).*$', 'im')
     
     if( test1.test(question) ){
         response = 'É um site que fornece informações como a história do local, hospedagens, lugares para alimentação, pontos turísticos, etc. Para informações mais detalhadas acesse o link "sobre nós", disponibilizado no rodapé da página.'
     }
      // As informaçoes do site sao gratuitas
-     test1 = new RegExp('^(?=.*informaçoes)(?=.*site).*$|^(?=.*informações)(?=.*gratuitas).*$', 'im')
+     test1 = new RegExp('^(?=.*informaçoes|Informações|informacoes|Informacoes)(?=.*site).*$|^(?=.*informaçoes|Informações|informacoes|Informacoes)(?=.*gratuitas).*$', 'im')
     
     if( test1.test(question) ){
         response = 'Todo o acervo de informações é disponibilizado gratuitamente a todos os usuários.'
@@ -76,17 +76,17 @@ const Message = (props) => {
 
     }
 
-    //Gostaria de postar fotos da minha viagem a Corumbá e dividir as experiências obtidas no lugar, onde posso fazê-lo?
-    test1 = new RegExp('^(?=.*fotos)(?=.*viagem).*$|^(?=.*corumbá)(?=.*fotos).*$', 'im')
+    //O site realiza reserva
+    test1 = new RegExp('^(?=.*site)(?=.*reserva).*$|^(?=.*realiza|fazer|Realizar|Fazer|fazer|Faz|faz)(?=.*reserva).*$|^(?=.*reserva)(?=.*hotel|hostel|pousada).*$|^(?=.*quarto)(?=.*hotel).*$', 'im')
     
     if( test1.test(question) ){
-        response = 'No menu superior da portal, existe a opção "minha viagem", o qual permite a postagem de fotos e adicionar relatos sobre a foto em questão.'
+        response = 'O site não realiza reservas. O propósito do portal é apenas divulgação de informações.'
 
 
     }
 
     //Onde consigo informações sobre rodoviária, aeroporto, pontos de taxi, etc.?
-    test1 = new RegExp('^(?=.*informacoes)(?=.*taxi).*$|^(?=.*informações)(?=.*aeroporto).*$', 'im')
+    test1 = new RegExp('^(?=.*informação)(?=.*taxi|táxi|rodoviaria|aeroporto|rodoviária).*$|^(?=.*informações)(?=.*aeroporto).*$', 'im')
     
     if( test1.test(question) ){
         response = 'No menu superior do portal existe a opção "serviços" que disponibiliza informações sobre os meios de locomoção na cidade além de outros  serviços como de locomoção (avião, ônibus, taxi, etc.), delegacia, hospitais e bombeiros.'

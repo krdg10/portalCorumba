@@ -90,8 +90,8 @@ export default class Detail extends Component {
         <br/> 
           <OndeIr />
           <br/> 
-          <left><Tratar_Carnaval list={this.state.list} /></left>
-          <left> <Comentario tipocomentario={this.props.params.id} /></left>
+          <Tratar_Carnaval list={this.state.list} />
+       <Comentario tipocomentario={this.props.params.id} />
         </div>
       );
     }

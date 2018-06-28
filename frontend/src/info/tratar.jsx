@@ -13,7 +13,11 @@ export default props => {
                  
                   <div className="col-md-5 tratar">
                     <div id="texto-info" className="text-justify">
-                    <img className="thumb img-fluid" src={img+post._id+'.png'} alt="Foto"/> 
+                    <img className="thumb img-fluid" src={img+post.imagemOne} alt="Foto"/>
+                    <img className="thumb img-fluid" src={img+post.imagemTwo} alt="Foto"/>
+                    <img className="thumb img-fluid" src={img+post.imagemThree} alt="Foto"/>
+                    <img className="thumb img-fluid" src={img+post.imagemFour} alt="Foto"/>
+                    <img className="thumb img-fluid" src={img+post.imagemFive} alt="Foto"/> 
                     </div>
                   </div>
                 
@@ -22,7 +26,7 @@ export default props => {
                         <p className="text-justify"> 
                             <strong>Descrição:</strong> {post.description} <br />
                             <strong>Localização:</strong> {post.rua}, {post.numero}, {post.bairro}<br />
-                            <strong>Contato:</strong> {post.telefone}, {post.email} <br />
+                            <strong>Contato:</strong> {post.telefone}, {post.email}, {post.imagemOne} <br />
                         </p>
                             
            

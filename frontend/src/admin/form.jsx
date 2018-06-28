@@ -6,10 +6,8 @@ import {  Link } from 'react-router'
 export default props => {
     return (
         <div role='form' className='comentarioForm'>
-            <Link to={`/admin_remove`}>
-                Remover registros
-            </Link>
-            <h1 className="section-heading text-center">ADMIN</h1>
+            
+            <h1 className="section-heading text-center">Inserir Informações</h1>
             
             <div className="container">
                 
@@ -169,7 +167,7 @@ export default props => {
                             type="file" 
                             name="image1"
                             onChange={ props.sendImage }
-                            onClick={props.handleChangeImagemOne}
+                            onChangeCapture={props.handleChangeImagemOne}
                         />
                         <input 
                             className="form-control" 
@@ -177,7 +175,7 @@ export default props => {
                             type="file" 
                             name="image2"
                             onChange={ props.sendImage }
-                            onClick={props.handleChangeImagemTwo}
+                            onChangeCapture={props.handleChangeImagemTwo}
                         />
                         <input 
                             className="form-control" 
@@ -185,7 +183,7 @@ export default props => {
                             type="file" 
                             name="image3"
                             onChange={ props.sendImage }
-                            onClick={props.handleChangeImagemThree}
+                            onChangeCapture={props.handleChangeImagemThree}
                         />
                         <input 
                             className="form-control" 
@@ -193,7 +191,7 @@ export default props => {
                             type="file" 
                             name="image4"
                             onChange={ props.sendImage }
-                            onClick={props.handleChangeImagemFour}
+                            onChangeCapture={props.handleChangeImagemFour}
                         />
                         <input 
                             className="form-control" 
@@ -201,7 +199,7 @@ export default props => {
                             type="file" 
                             name="image5"
                             onChange={ props.sendImage }
-                            onClick={props.handleChangeImagemFive}
+                            onChangeCapture={props.handleChangeImagemFive}
                         />
                        
                     

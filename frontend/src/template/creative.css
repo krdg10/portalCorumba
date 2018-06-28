@@ -624,4 +624,6 @@ footer ul li{
   color: white !important;
 }
             
-                        
+img[src=404]{
+  display: none;
+}

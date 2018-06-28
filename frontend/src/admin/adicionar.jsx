@@ -134,11 +134,18 @@ export default class Admin extends Component {
         const homePremium = this.state.homePremium
         const site = this.state.site
         const pesca = this.state.pesca
-        const imagemOne = this.state.imagemOne
-        const imagemTwo = this.state.imagemTwo
-        const imagemThree = this.state.imagemThree
-        const imagemFour = this.state.imagemFour
-        const imagemFive = this.state.imagemFive
+        const imagemOne = this.state.imagemOne.replace("C:\\fakepath\\", "")//  Date.now()+'.png' salvar assim no bd e mandar com esse nome pro back pra evitar repetição. Tem que mandar o nome do arquivo assim pro back tbm, n so mudar no bd
+        const imagemTwo = this.state.imagemTwo.replace("C:\\fakepath\\", "")
+        const imagemThree = this.state.imagemThree.replace("C:\\fakepath\\", "")
+        const imagemFour = this.state.imagemFour.replace("C:\\fakepath\\", "")
+        const imagemFive = this.state.imagemFive.replace("C:\\fakepath\\", "")
+
+     
+        console.log(imagemOne)
+        console.log(imagemTwo)
+        console.log(imagemThree)
+        console.log(imagemFour)
+        console.log(imagemFive)
 
         axios.post(URL, {description, name, tipo, hospedagemPremium, rua, 
         cep, bairro, numero, email, telefone,
@@ -159,7 +166,7 @@ export default class Admin extends Component {
         console.log(this.state.id)
     }
     sendImage(event) {
-        console.log(this.state.id)
+        
         const URL = "http://localhost:3003/file"
         var bodyFormData = new FormData();
         bodyFormData.set('imagem', event.target.files[0]);
