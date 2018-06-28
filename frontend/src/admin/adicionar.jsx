@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import  {sendImage}  from './product'
 
 const URL = 'http://localhost:3003/api/posts'
 
@@ -14,7 +13,7 @@ export default class Admin extends Component {
         bairro: '', numero: '', email: '', telefone: '', 
         horario_funcionamento: '', hospedagemPremium: '', ondeIrPremium: '',
         alimentacaoPremium: '', lazerPremium: '', homePremium: '', site: '', pesca: '', 
-        extension: '', list: [] }
+        extension: '', id: '', list: [] }
         
 
         this.handleChangeDescription = this.handleChangeDescription.bind(this)
@@ -36,6 +35,7 @@ export default class Admin extends Component {
         this.handleChangePesca = this.handleChangePesca.bind(this)
         this.handleChangeExtension = this.handleChangeExtension.bind(this)
         this.handleAdd = this.handleAdd.bind(this)
+        this.sendImage = this.sendImage.bind(this)
         this.refresh()
        
     }
@@ -122,18 +122,45 @@ export default class Admin extends Component {
         cep, bairro, numero, email, telefone,
         horario_funcionamento, ondeIrPremium, alimentacaoPremium, lazerPremium,
         homePremium, site, pesca, extension})
-            .then(resp => this.refresh())
+            .then(resp => this.refresh(resp.data._id))
+       
             
     }
-    refresh(){
+    refresh(help){
         axios.get(`${URL}?sort=-createdAt`)
             .then(resp => this.setState({...this.state, description: '', tipo: '', name: '', rua: '', 
             cep: '', bairro: '', numero: '', email: '', 
             telefone: '', horario_funcionamento: '', hospedagemPremium: '', ondeIrPremium: '', 
             alimentacaoPremium: '', lazerPremium: '', homePremium: '', site: '', 
-            pesca: '', extension:'', list: resp.data}))
+            pesca: '', extension:'', list: resp.data})) 
+        this.state.id = help
+        console.log(this.state.id)
     }
-
+    sendImage(event) {
+        const URL = "http://localhost:3003/file"
+        var bodyFormData = new FormData();
+        bodyFormData.set('imagem', event.target.files[0]);
+        //console.log(this.state.id)
+        //console.log('chegou')
+        // console.log(event.target.files[0])
+        //console.log(bodyFormData)
+        axios({
+            method: 'post',
+            url: URL,
+            data: bodyFormData,
+            config: { headers: {'Content-Type': 'multipart/form-data' }}
+        })
+        .then(function (resp) {
+            //handle success
+            console.log(resp)
+          
+        })
+        .catch(function (err) {
+            //handle error
+            console.log(err);
+        });
+    
+}
    
 
     render() {
@@ -157,6 +184,7 @@ export default class Admin extends Component {
                     site={this.state.site}
                     pesca={this.state.pesca}
                     extension={this.state.extension}
+                    id={this.state.id}
 
                     handleAdd={this.handleAdd}
                     handleChangeAlimentacaoPremium={this.handleChangeAlimentacaoPremium}
@@ -177,6 +205,7 @@ export default class Admin extends Component {
                     handleChangeSite={this.handleChangeSite}
                     handleChangePesca={this.handleChangePesca}
                     handleChangeExtension={this.handleChangeExtension}
+                    sendImage={this.sendImage}
                    
                     />
              

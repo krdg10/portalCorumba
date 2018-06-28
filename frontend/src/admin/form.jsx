@@ -1,11 +1,9 @@
 import React from 'react'
-import Grid from '../template/grid'
 import IconButton from '../template/iconButton'
-import { Router, Route, Link, hashHistory } from 'react-router'
-import  {sendImage}  from './product'
+import {  Link } from 'react-router'
+
 
 export default props => {
-
     return (
         <div role='form' className='comentarioForm'>
             <Link to={`/admin_remove`}>
@@ -170,9 +168,12 @@ export default props => {
                             id="image" 
                             type="file" 
                             name="image"
-                            onChange={ sendImage }
+                            onChange={ props.sendImage }
                             onClick={props.handleChangeExtension}
                         />
+                       
+                    
+                        
                        
                         
                     </div>
@@ -187,4 +188,5 @@ export default props => {
          
         </div>
     )
+    
 }
