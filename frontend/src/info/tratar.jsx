@@ -1,7 +1,7 @@
 import React from 'react'
 import ImagemSeis from '../../public/img/portfolio/thumbnails/6.jpg'
 
-
+// nesse novo jeito, imagem pra aparecer pega post.imagem e nao post.id. Tem que mudar os cards pras thumbnails aparecerem, colocar post.imagem. Ver negocio de salvar imagem certinho, do nome e tal, fazer o date.now rodar pra nao ter repetiçao. Excluir banco pra popular depois, fazer negocio de hide em caso de quantidade menor de imagens 
 const img = 'http://localhost:3003/assets/img/'
 export default props => {
     const renderRows = () =>{

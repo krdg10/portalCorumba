@@ -627,3 +627,7 @@ footer ul li{
 img[src=404]{
   display: none;
 }
+
+img[src="http://localhost:3003/assets/img/undefined"]{
+  display: none;
+}
