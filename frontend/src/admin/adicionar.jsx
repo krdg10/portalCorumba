@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import {  Link } from 'react-router'
 
 const URL = 'http://localhost:3003/api/posts'
 
@@ -196,6 +197,9 @@ export default class Admin extends Component {
     render() {
         return (
             <div className='admin'> 
+             <Link to={`/admin_remove`}>
+                Remover registros
+             </Link>
              <PostForm description={this.state.description} 
                     name={this.state.name}
                     rua={this.state.rua}

@@ -1,7 +1,7 @@
 
 import React from 'react'
 import Imagem from '../../public/img/img_avatar1.png'
-import { Router, Route, Link, hashHistory } from 'react-router'
+import {  Link } from 'react-router'
 
 export default props => {
     const renderRows = () =>{
@@ -15,7 +15,7 @@ export default props => {
                     
                     <div  className="card  " >
                         <Link to={`/detail/${post._id}/${post.tipo}`}>
-                        <img className=" img-thumbnail img-fluid" src={img+post._id+'.png'} alt="Card image" />
+                        <img className=" img-thumbnail img-fluid" src={img+post.imagemOne} alt="Card image" />
                         </Link>
                         <div className="card-body ">
                             <Link to={`/detail/${post._id}/${post.tipo}`}>
