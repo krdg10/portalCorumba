@@ -20,8 +20,8 @@ export default class Hostel extends Component {
   
    
     refresh(){
-        const search = `&tipo__regex=hostel` 
-        axios.get(`${URL}?sort=-createdAt${search}`)
+        const search = `&tipo=hostel` 
+        axios.get(`${URL}?aceito=true&sort=-createdAt${search}`)
             .then(resp => this.setState({...this.state, description: '', tipo: '', name: '', list: resp.data}))
     }
 

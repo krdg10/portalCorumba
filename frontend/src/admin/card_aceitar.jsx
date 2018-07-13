@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { Router, Route, Link, hashHistory } from 'react-router'
+import {  Link } from 'react-router'
 import IconButton from '../template/iconButton'
 
 export default props => {
@@ -24,8 +24,8 @@ export default props => {
                         <p className="card-text">{post.extension}</p>
                         <IconButton style='danger' icon='trash-o' 
                         onClick={() => props.handleRemove(post)}></IconButton>
-                        <IconButton style='warning' icon='undo'
-                        onClick={() => props.handleMarkAsPending(post)}></IconButton>
+                        <IconButton style='success' icon='check'
+                        onClick={() => props.handleMarkAsDone(post)}></IconButton>
 
                     </div>
                 </div>
@@ -60,5 +60,3 @@ export default props => {
         </div>
     )
 }
-
-/*no onclick do icon remove ver se da pra passar só o id e nao todo o objeto */

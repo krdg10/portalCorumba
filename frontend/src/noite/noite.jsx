@@ -21,7 +21,7 @@ export default class Noite extends Component {
    
     refresh(){
         const search = `&tipo=noite` 
-        axios.get(`${URL}?sort=-createdAt${search}`)
+        axios.get(`${URL}?aceito=true&sort=-createdAt${search}`)
             .then(resp => this.setState({...this.state, description: '', tipo: '', name: '', list: resp.data}))
     }
 

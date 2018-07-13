@@ -11,7 +11,6 @@ import Onde_Ir from '../onde_ir/onde_ir'
 import Hotel from '../hotel/hotel'
 import Pousada from '../pousada/pousada'
 import Hostel from '../hostel/hostel'
-import Teste from '../teste/hotel'
 import Detail from '../info/info'
 import Lazer from '../lazer/lazer'
 import Noite from '../noite/noite'
@@ -27,6 +26,8 @@ import Admin from '../admin/adicionar'
 import Admin_exclude from '../admin/excluir'
 import Servicos from '../servicos/servicos'
 import Pesca from '../pesca/pesca'
+import Inserir from '../inserir_infos/adicionar'
+import Admin_aceita from '../admin/aceitar'
 //import Login from '../admin/tela_login'
 //import Callback from '../admin/Callback'
 
@@ -58,6 +59,9 @@ export default props =>(
         <Route path='/admin_remove' component={Admin_exclude}  />
         <Route path='/servicos' component={Servicos}  />
         <Route path='/pesca' component={Pesca}  />
+        <Route path='/adicionar_infos' component={Inserir}  />
+        <Route path='/admin_aceita' component={Admin_aceita}  />
+        
         
 
         <Redirect from='*' to='/error'/>

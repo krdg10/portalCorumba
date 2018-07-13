@@ -3,16 +3,16 @@ import axios from 'axios'
 import { Router, Route, Link, hashHistory } from 'react-router'
 
 
-import Card from './card_adm'
+import Card from './card_aceitar'
 const URL = 'http://localhost:3003/api/posts'
 
-export default class Admin_Delete extends Component {
+export default class Admin_Aceita extends Component {
     constructor(props){
         super(props)
         this.state = {description: '', tipo: '', name: '', list: [] }
 
         this.handleRemove = this.handleRemove.bind(this)
-        this.handleMarkAsPending = this.handleMarkAsPending.bind(this)
+        this.handleMarkAsDone = this.handleMarkAsDone.bind(this)
         this.handleChangeTipo = this.handleChangeTipo.bind(this)
         this.refresh()
         this.refresh = this.refresh.bind(this)
@@ -33,19 +33,19 @@ export default class Admin_Delete extends Component {
         const tipo = this.state.tipo
         const search = `&tipo=${tipo}` 
         if(tipo==''){
-            axios.get(`${URL}?aceito=true&sort=-createdAt`)
+            axios.get(`${URL}?aceito=false&sort=-createdAt`)
             .then(resp => this.setState({...this.state, list: resp.data}))
         }
         else{
-            axios.get(`${URL}?aceito=true&sort=-createdAt${search}`)
+            axios.get(`${URL}?aceito=false&sort=-createdAt${search}`)
             .then(resp => this.setState({...this.state, list: resp.data}))
         }
         
        
     }
 
-    handleMarkAsPending(post){
-        axios.put(`${URL}/${post._id}`, {...post, aceito: false})
+    handleMarkAsDone(post){
+        axios.put(`${URL}/${post._id}`, {...post, aceito: true})
         .then(resp => this.refresh())
     }
 
@@ -56,13 +56,13 @@ export default class Admin_Delete extends Component {
                 <Link to={`/admin`}>
                 Adicionar registros
                 </Link> <br />
-                <Link to={`/admin_aceita`}>
-                Aceitar registros
+                <Link to={`/admin_remove`}>
+                Remover registros
                 </Link>
                 
                 
                 <Card list={this.state.list} handleRemove={this.handleRemove} 
-                handleChangeTipo={this.handleChangeTipo} handleMarkAsPending={this.handleMarkAsPending}
+                handleChangeTipo={this.handleChangeTipo} handleMarkAsDone={this.handleMarkAsDone}
                 refresh={this.refresh} />
                
 
@@ -71,6 +71,3 @@ export default class Admin_Delete extends Component {
         )
     }
 }
-
-//pensei em colocar this.state.tipo no parametro e tirar o refresh mas n funfou
-//tirar a atualização do state.tipo na hora do refresh

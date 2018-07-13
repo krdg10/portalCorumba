@@ -100,57 +100,6 @@ export default props => {
                     </div>
 
                     <div className="form-group">
-                        Hospedagem Premium:
-                        <div className="form-check-inline">
-                            <label className="form-check-label">
-                            <input type="radio" className="form-check-input" name="hospedagemPremium" id="hospedagemPremium" value='false' onChange={props.handleChangeHospedagemPremium}/>false
-                            </label>
-                            <label className="form-check-label">
-                            <input type="radio" className="form-check-input" name="hospedagemPremium" id="hospedagemPremium" value='true' onChange={props.handleChangeHospedagemPremium} />true
-                            </label>
-                        </div>
-                        <br/>
-                        OndeIr Premium: 
-                        <div className="form-check-inline">
-                            <label className="form-check-label">
-                            <input type="radio" className="form-check-input" name="ondeIrPremium" id="ondeIrPremium" value='false' onChange={props.handleChangeOndeIrPremium}/>false
-                            </label>
-                            <label className="form-check-label">
-                            <input type="radio" className="form-check-input" name="ondeIrPremium" id="ondeIrPremium" value='true' onChange={props.handleChangeOndeIrPremium}/>true
-                            </label>
-                        </div>
-                        <br/>
-                        
-                        Alimentacao Premium: 
-                        <div className="form-check-inline">
-                            <label className="form-check-label">
-                            <input type="radio" className="form-check-input" name="alimentacaoPremium" id="alimentacaoPremium" value='false' onChange={props.handleChangeAlimentacaoPremium}/>false
-                            </label>
-                            <label className="form-check-label">
-                            <input type="radio" className="form-check-input" name="alimentacaoPremium" id="alimentacaoPremium" value='true' onChange={props.handleChangeAlimentacaoPremium}/>true
-                            </label>
-                        </div>
-                        <br/>
-                        Lazer Premium: 
-                        <div className="form-check-inline">
-                            <label className="form-check-label">
-                            <input type="radio" className="form-check-input" name="lazerPremium" id="lazerPremium" value='false' onChange={props.handleChangeLazerPremium}/>false
-                            </label>
-                            <label className="form-check-label">
-                            <input type="radio" className="form-check-input" name="lazerPremium" id="lazerPremium" value='true' onChange={props.handleChangeLazerPremium}/>true
-                            </label>
-                        </div>
-                        <br/>
-                        Home Premium: 
-                        <div className="form-check-inline">
-                            <label className="form-check-label">
-                            <input type="radio" className="form-check-input" name="homePremium" id="homePremium" value='false' onChange={props.handleChangeHomePremium}/>false
-                            </label>
-                            <label className="form-check-label">
-                            <input type="radio" className="form-check-input" name="homePremium" id="homePremium" value='true' onChange={props.handleChangeHomePremium}/>true
-                            </label>
-                        </div>
-                        <br/>
                         Pesca: 
                         <div className="form-check-inline">
                             <label className="form-check-label">

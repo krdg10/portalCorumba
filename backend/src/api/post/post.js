@@ -24,6 +24,7 @@ const postSchema = new mongoose.Schema({
     imagemThree: {type: String},
     imagemFour: {type: String},
     imagemFive: {type: String},
+    aceito: {type: Boolean}, 
     createdAt: { type: Date, default: Date.now }
 })
 

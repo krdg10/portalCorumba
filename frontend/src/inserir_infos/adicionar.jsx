@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import {  Link } from 'react-router'
+
 
 const URL = 'http://localhost:3003/api/posts'
 
-import PostForm from './form'
+import PostForm from './formulario'
 
-export default class Admin extends Component {
+export default class Inserir extends Component {
     
     constructor(props){
         super(props)
@@ -140,7 +140,7 @@ export default class Admin extends Component {
         const imagemThree = this.state.imagemThree.replace("C:\\fakepath\\", "")
         const imagemFour = this.state.imagemFour.replace("C:\\fakepath\\", "")
         const imagemFive = this.state.imagemFive.replace("C:\\fakepath\\", "")
-        const aceito = true
+        const aceito = false
      
         console.log(imagemOne)
         console.log(imagemTwo)
@@ -196,13 +196,7 @@ export default class Admin extends Component {
 
     render() {
         return (
-            <div className='admin'> 
-                <Link to={`/admin_remove`}>
-                    Remover registros
-                </Link> <br />
-                <Link to={`/admin_aceita`}>
-                    Aceitar registros
-                </Link>
+            <div className='inserir'> 
              <PostForm description={this.state.description} 
                     name={this.state.name}
                     rua={this.state.rua}
@@ -259,5 +253,3 @@ export default class Admin extends Component {
         )
     }
 }
-
-/*criar login, colocar pra upar imagem */
